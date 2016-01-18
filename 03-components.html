@@ -106,6 +106,9 @@
 					<a href="/03-components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
+							<a href="/03-components.html#box">Box</a>
+						</li>
+						<li>
 							<a href="/03-components.html#buttons">Buttons</a>
 						</li>
 						<li>
@@ -163,6 +166,49 @@
 		</div>
 		<!-- /fabricator menu -->
 		<div class="f-container">
+			<div class="f-search-materials">
+				<input type="search" id="search-materials" class="form-control" list="materials-list" placeholder="Quick search…">
+				<datalist id="materials-list">
+									<option value="/01-defaults.html#forms.01.input">Forms &middot; Input</option>
+									<option value="/01-defaults.html#forms.02.select">Forms &middot; Select</option>
+									<option value="/01-defaults.html#forms.03.textarea">Forms &middot; Textarea</option>
+									<option value="/01-defaults.html#forms.04.checkbox-&amp;-radio">Forms &middot; Checkbox &amp; Radio</option>
+									<option value="/01-defaults.html#forms.05.checkbox-&amp;-radio-inline">Forms &middot; Checkbox &amp; Radio Inline</option>
+									<option value="/01-defaults.html#forms.06.input-&amp;-select-size">Forms &middot; Input &amp; Select Size</option>
+								<option value="/01-defaults.html#headings">Headings</option>
+									<option value="/01-defaults.html#lists.descriptions">Lists &middot; Descriptions</option>
+									<option value="/01-defaults.html#lists.ordered">Lists &middot; Ordered</option>
+									<option value="/01-defaults.html#lists.unordered">Lists &middot; Unordered</option>
+								<option value="/01-defaults.html#paragraph">Paragraph</option>
+								<option value="/01-defaults.html#table">Table</option>
+								<option value="/02-helpers.html#float">Float</option>
+								<option value="/02-helpers.html#positionning">Positionning</option>
+									<option value="/02-helpers.html#responsive.display">Responsive &middot; Display</option>
+									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
+								<option value="/02-helpers.html#spacings">Spacings</option>
+								<option value="/02-helpers.html#text">Text</option>
+								<option value="/03-components.html#box">Box</option>
+									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
+									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
+									<option value="/03-components.html#buttons.states">Buttons &middot; States</option>
+									<option value="/03-components.html#buttons.styles">Buttons &middot; Styles</option>
+									<option value="/03-components.html#buttons.variants">Buttons &middot; Variants</option>
+								<option value="/03-components.html#embed-responsive">Embed Responsive</option>
+									<option value="/03-components.html#grid-and-widths.01.widths">Grid And Widths &middot; Widths</option>
+									<option value="/03-components.html#grid-and-widths.02.widths-responsive">Grid And Widths &middot; Widths Responsive</option>
+									<option value="/03-components.html#grid-and-widths.03.gutters">Grid And Widths &middot; Gutters</option>
+									<option value="/03-components.html#grid-and-widths.04.alignment">Grid And Widths &middot; Alignment</option>
+									<option value="/03-components.html#grid-and-widths.05.order">Grid And Widths &middot; Order</option>
+									<option value="/03-components.html#lists.01.unstyled">Lists &middot; Unstyled</option>
+									<option value="/03-components.html#lists.inline">Lists &middot; Inline</option>
+									<option value="/03-components.html#lists.stacked">Lists &middot; Stacked</option>
+								<option value="/03-components.html#media">Media</option>
+								<option value="/03-components.html#media-responsive">Media Responsive</option>
+								<option value="/03-components.html#mosaic">Mosaic</option>
+								<option value="/03-components.html#mosaic-responsive">Mosaic Responsive</option>
+								<option value="/04-structures.html#forms-layout">Forms Layout</option>
+				</datalist>
+			</div>
 			<div class="f-control-bar">
 				<div class="f-control f-menu-toggle">
 					<svg>
@@ -177,6 +223,73 @@
 <h1 data-f-toggle="labels">Components</h1>
 
 
+<div class="f-item-group" id="box">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Box</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>By default two styling modifiers are provided: <code>default</code> and <code>primary</code>. Remove the default padding with <code>tight</code>, adjust it according to the spacing settings with <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="grid">
+	<div class="grid__item md-w-1/3">
+		<div class="box">
+			<h3>Lorem ipsum</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!</p>
+		</div>
+	</div>
+	<div class="grid__item md-w-1/3">
+		<div class="box box--default">
+			<h3>Lorem ipsum</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!</p>
+		</div>
+	</div>
+	<div class="grid__item md-w-1/3">
+		<div class="box box--primary">
+			<h3>Lorem ipsum</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item md-w-1/3&quot;&gt;
+		&lt;div class=&quot;box&quot;&gt;
+			&lt;h3&gt;Lorem ipsum&lt;/h3&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item md-w-1/3&quot;&gt;
+		&lt;div class=&quot;box box--default&quot;&gt;
+			&lt;h3&gt;Lorem ipsum&lt;/h3&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item md-w-1/3&quot;&gt;
+		&lt;div class=&quot;box box--primary&quot;&gt;
+			&lt;h3&gt;Lorem ipsum&lt;/h3&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="buttons">
 
 	<div class="f-item-heading-group">
@@ -185,18 +298,6 @@
 		<div class="f-item-group" id="buttons.base">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Base</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>By default, we normalize button style to the minimum. Use the sizes, styles and variants classes to make them shinier. You can also use this as a base for any custom button.</p>
 
@@ -211,19 +312,21 @@
 &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
 &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;btn&quot;&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="buttons.sizes">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Sizes</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<button class="btn btn--default btn--small">Small</button>
@@ -235,19 +338,21 @@
 &lt;button class=&quot;btn btn--default&quot;&gt;Regular&lt;/button&gt;
 &lt;button class=&quot;btn btn--default btn--large&quot;&gt;Large&lt;/button&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="buttons.states">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">States</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<button class="btn btn--primary btn--md" disabled>Disabled</button>
@@ -255,19 +360,21 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;button class=&quot;btn btn--primary btn--md&quot; disabled&gt;Disabled&lt;/button&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="buttons.styles">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Styles</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<button class="btn btn--md btn--default">Default</button>
@@ -277,19 +384,21 @@
 	<pre><code class="language-markup">&lt;button class=&quot;btn btn--md btn--default&quot;&gt;Default&lt;/button&gt;
 &lt;button class=&quot;btn btn--md btn--primary&quot;&gt;Primary&lt;/button&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="buttons.variants">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Variants</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<p>
@@ -307,6 +416,16 @@
 	&lt;button class=&quot;btn btn--md btn--default btn--block&quot;&gt;Block button&lt;/button&gt;
 &lt;/p&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 
@@ -317,18 +436,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Embed Responsive</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Thanks to <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a> and <a href="https://github.com/suitcss/suit">SUIT CSS</a>.</p>
 
@@ -365,6 +472,16 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 
 </div>
@@ -378,18 +495,6 @@
 		<div class="f-item-group" id="grid-and-widths.01.widths">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Widths</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Widths are percentages represented by fractions. All classes are constructed like <code>.w-{nominator}/{denominator}</code>. By default you have halves, thirds, quarters, fifths and sixths. You can easily add more by changing the <code>$widths-columns</code> setting. Widths are independent from the grid, you’re free to use them anywhere, with other components such as mosaic, media, etc.</p>
 
@@ -516,23 +621,21 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="grid-and-widths.02.widths-responsive">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Widths Responsive</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Change an element width depending on predefined breakpoints. This use a mobile-first approach — it use breakpoints defined as <code>min-width</code> only — and therefor cover all upper resolutions.</p>
 
@@ -557,19 +660,21 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="grid-and-widths.03.gutters">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Gutters</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<div class="grid grid--tight">
@@ -717,23 +822,21 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="grid-and-widths.04.alignment">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Alignment</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Change columns alignment with <code>.grid</code> modifiers; combining horizontal (center, right) and vertical (middle, bottom) alignment are possible. Top and left are the default values.</p>
 
@@ -846,23 +949,21 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="grid-and-widths.05.order">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Order</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Reverse columns order with <code>.grid--rev</code> when there’s more than one per row.</p>
 
@@ -887,6 +988,16 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 
@@ -901,18 +1012,6 @@
 		<div class="f-item-group" id="lists.01.unstyled">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Unstyled</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Simply remove list default bullets or numbers.</p>
 
@@ -931,23 +1030,21 @@
 	&lt;li&gt;Sed molestie augue sit amet leo consequat posuere&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="lists.inline">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Inline</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Put list items inline with or without gutters. You can reduce or increase the space by using the modifiers <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>. Remove gutters with <code>tight</code>, add separators with <code>divided</code>.</p>
 <p>Since the list items are displayed as <code>inline-block</code>, you will probablby get an extra white space between them. Kanbasu was first removing those by setting the <code>font-size</code> to zero but this will prevent your code from being DRY in many cases. Therefor you should handle that on your side the way your prefer. <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">This article</a> covers the topic pretty well.</p>
@@ -991,23 +1088,21 @@
 	&lt;li&gt;Dolor&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="lists.stacked">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Stacked</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Stack list items with gutters. You can reduce or increase the space by using the modifiers <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>. Add separators with <code>divided</code>.</p>
 
@@ -1050,6 +1145,16 @@
 	&lt;li&gt;Sed molestie augue sit amet leo consequat posuere&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 
@@ -1060,18 +1165,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Media</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>The famous media object created by <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Nicole Sullivan</a>. Simply put content next to an image or anything else.</p>
 
@@ -1116,6 +1209,16 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 
 </div>
@@ -1125,18 +1228,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Media Responsive</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Extend the default media component but vertically align image and content under a specific breakpoint.</p>
 
@@ -1163,6 +1254,16 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 
 </div>
@@ -1172,18 +1273,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Mosaic</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Use the power of tables to display content. The most interesting part of this component is to vertically align its content.</p>
 <p>You can share space between cells evenly with the modifier <code>mosaic--fixed</code>. Make a cell fit its content with <code>mosaic__cell--fit</code>.</p>
@@ -1243,6 +1332,16 @@
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 
 </div>
@@ -1252,18 +1351,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Mosaic Responsive</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Stack mosaic items under a specific breakpoint. Use the spacings helper to adjust padding/margin between items.</p>
 
@@ -1295,6 +1382,16 @@
 		&lt;button&gt;Press me&lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
 </div>
 
 

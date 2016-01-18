@@ -106,6 +106,9 @@
 					<a href="/03-components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
+							<a href="/03-components.html#box">Box</a>
+						</li>
+						<li>
 							<a href="/03-components.html#buttons">Buttons</a>
 						</li>
 						<li>
@@ -163,6 +166,49 @@
 		</div>
 		<!-- /fabricator menu -->
 		<div class="f-container">
+			<div class="f-search-materials">
+				<input type="search" id="search-materials" class="form-control" list="materials-list" placeholder="Quick search…">
+				<datalist id="materials-list">
+									<option value="/01-defaults.html#forms.01.input">Forms &middot; Input</option>
+									<option value="/01-defaults.html#forms.02.select">Forms &middot; Select</option>
+									<option value="/01-defaults.html#forms.03.textarea">Forms &middot; Textarea</option>
+									<option value="/01-defaults.html#forms.04.checkbox-&amp;-radio">Forms &middot; Checkbox &amp; Radio</option>
+									<option value="/01-defaults.html#forms.05.checkbox-&amp;-radio-inline">Forms &middot; Checkbox &amp; Radio Inline</option>
+									<option value="/01-defaults.html#forms.06.input-&amp;-select-size">Forms &middot; Input &amp; Select Size</option>
+								<option value="/01-defaults.html#headings">Headings</option>
+									<option value="/01-defaults.html#lists.descriptions">Lists &middot; Descriptions</option>
+									<option value="/01-defaults.html#lists.ordered">Lists &middot; Ordered</option>
+									<option value="/01-defaults.html#lists.unordered">Lists &middot; Unordered</option>
+								<option value="/01-defaults.html#paragraph">Paragraph</option>
+								<option value="/01-defaults.html#table">Table</option>
+								<option value="/02-helpers.html#float">Float</option>
+								<option value="/02-helpers.html#positionning">Positionning</option>
+									<option value="/02-helpers.html#responsive.display">Responsive &middot; Display</option>
+									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
+								<option value="/02-helpers.html#spacings">Spacings</option>
+								<option value="/02-helpers.html#text">Text</option>
+								<option value="/03-components.html#box">Box</option>
+									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
+									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
+									<option value="/03-components.html#buttons.states">Buttons &middot; States</option>
+									<option value="/03-components.html#buttons.styles">Buttons &middot; Styles</option>
+									<option value="/03-components.html#buttons.variants">Buttons &middot; Variants</option>
+								<option value="/03-components.html#embed-responsive">Embed Responsive</option>
+									<option value="/03-components.html#grid-and-widths.01.widths">Grid And Widths &middot; Widths</option>
+									<option value="/03-components.html#grid-and-widths.02.widths-responsive">Grid And Widths &middot; Widths Responsive</option>
+									<option value="/03-components.html#grid-and-widths.03.gutters">Grid And Widths &middot; Gutters</option>
+									<option value="/03-components.html#grid-and-widths.04.alignment">Grid And Widths &middot; Alignment</option>
+									<option value="/03-components.html#grid-and-widths.05.order">Grid And Widths &middot; Order</option>
+									<option value="/03-components.html#lists.01.unstyled">Lists &middot; Unstyled</option>
+									<option value="/03-components.html#lists.inline">Lists &middot; Inline</option>
+									<option value="/03-components.html#lists.stacked">Lists &middot; Stacked</option>
+								<option value="/03-components.html#media">Media</option>
+								<option value="/03-components.html#media-responsive">Media Responsive</option>
+								<option value="/03-components.html#mosaic">Mosaic</option>
+								<option value="/03-components.html#mosaic-responsive">Mosaic Responsive</option>
+								<option value="/04-structures.html#forms-layout">Forms Layout</option>
+				</datalist>
+			</div>
 			<div class="f-control-bar">
 				<div class="f-control f-menu-toggle">
 					<svg>
@@ -185,19 +231,15 @@
 		<div class="f-item-group" id="forms.01.input">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Input</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<div class="form-group">
 	<label class="field-label" for="text">Text</label>
 	<input type="text" id="text" placeholder="Lorem ipsum dolor sit amet">
+</div>
+<div class="form-group">
+	<label class="field-label" for="email">Disabled email</label>
+	<input type="email" id="email" value="hello@mailbox.io" disabled>
 </div>
 <div class="form-group">
 	<label class="field-label" for="number">Number</label>
@@ -211,11 +253,23 @@
 	<label class="field-label" for="file">File</label>
 	<input type="file" id="file">
 </div>
+<div class="form-group">
+	<label class="field-label" for="date">Date</label>
+	<input type="date" id="date">
+</div>
+<div class="form-group">
+	<label class="field-label" for="date">Date & time local</label>
+	<input type="datetime-local" id="date">
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
 	&lt;label class=&quot;field-label&quot; for=&quot;text&quot;&gt;Text&lt;/label&gt;
 	&lt;input type=&quot;text&quot; id=&quot;text&quot; placeholder=&quot;Lorem ipsum dolor sit amet&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;field-label&quot; for=&quot;email&quot;&gt;Disabled email&lt;/label&gt;
+	&lt;input type=&quot;email&quot; id=&quot;email&quot; value=&quot;hello@mailbox.io&quot; disabled&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
 	&lt;label class=&quot;field-label&quot; for=&quot;number&quot;&gt;Number&lt;/label&gt;
@@ -228,22 +282,35 @@
 &lt;div class=&quot;form-group&quot;&gt;
 	&lt;label class=&quot;field-label&quot; for=&quot;file&quot;&gt;File&lt;/label&gt;
 	&lt;input type=&quot;file&quot; id=&quot;file&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;field-label&quot; for=&quot;date&quot;&gt;Date&lt;/label&gt;
+	&lt;input type=&quot;date&quot; id=&quot;date&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;field-label&quot; for=&quot;date&quot;&gt;Date &amp; time local&lt;/label&gt;
+	&lt;input type=&quot;datetime-local&quot; id=&quot;date&quot;&gt;
 &lt;/div&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
 </div>
 
 		</div>
 		<div class="f-item-group" id="forms.02.select">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Select</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
-			</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Notice: some browsers don’t care about <code>border-radius</code> property applied to select.</p>
+
+</div>
 <div class="f-item-preview">
 	<select id="select">
 	<option selected></option>
@@ -260,23 +327,21 @@
 	&lt;option&gt;Option 3&lt;/option&gt;
 &lt;/select&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="forms.03.textarea">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Textarea</h3>
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Use the <code>rows</code> attribute to make it higher.</p>
 
@@ -287,19 +352,21 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;textarea id=&quot;textarea&quot;&gt;&lt;/textarea&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="forms.04.checkbox-&amp;-radio">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Checkbox &amp; Radio</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<div class="form-group">
@@ -349,19 +416,21 @@
 	&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="forms.05.checkbox-&amp;-radio-inline">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Checkbox &amp; Radio Inline</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<div class="form-group">
@@ -411,19 +480,21 @@
 	&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
-		<div class="f-item-group" id="forms.06.input-size">
+		<div class="f-item-group" id="forms.06.input-&amp;-select-size">
 			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Input Size</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
+				<h3 class="f-item-heading">Input &amp; Select Size</h3>
 			</div>
 <div class="f-item-preview">
 	<div class="form-group">
@@ -435,6 +506,31 @@
 <div class="form-group">
 	<input type="text" class="input--large" placeholder="Large">
 </div>
+
+<div class="form-group">
+	<select class="select--small">
+		<option selected>Small</option>
+		<option>Option 1</option>
+		<option>Option 2</option>
+		<option>Option 3</option>
+	</select>
+</div>
+<div class="form-group">
+	<select>
+		<option selected>Default</option>
+		<option>Option 1</option>
+		<option>Option 2</option>
+		<option>Option 3</option>
+	</select>
+</div>
+<div class="form-group">
+	<select class="select--large">
+		<option selected>Large</option>
+		<option>Option 1</option>
+		<option>Option 2</option>
+		<option>Option 3</option>
+	</select>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
@@ -445,7 +541,42 @@
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
 	&lt;input type=&quot;text&quot; class=&quot;input--large&quot; placeholder=&quot;Large&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;select class=&quot;select--small&quot;&gt;
+		&lt;option selected&gt;Small&lt;/option&gt;
+		&lt;option&gt;Option 1&lt;/option&gt;
+		&lt;option&gt;Option 2&lt;/option&gt;
+		&lt;option&gt;Option 3&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;select&gt;
+		&lt;option selected&gt;Default&lt;/option&gt;
+		&lt;option&gt;Option 1&lt;/option&gt;
+		&lt;option&gt;Option 2&lt;/option&gt;
+		&lt;option&gt;Option 3&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;select class=&quot;select--large&quot;&gt;
+		&lt;option selected&gt;Large&lt;/option&gt;
+		&lt;option&gt;Option 1&lt;/option&gt;
+		&lt;option&gt;Option 2&lt;/option&gt;
+		&lt;option&gt;Option 3&lt;/option&gt;
+	&lt;/select&gt;
 &lt;/div&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
 </div>
 
 		</div>
@@ -457,14 +588,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Headings</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div>
 <div class="f-item-preview">
 	<h1>Lorem ipsum dolor sit amet</h1>
@@ -482,6 +605,16 @@
 &lt;h5&gt;Lorem ipsum dolor sit amet&lt;/h5&gt;
 &lt;h6&gt;Lorem ipsum dolor sit amet&lt;/h6&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 
 </div>
@@ -495,14 +628,6 @@
 		<div class="f-item-group" id="lists.descriptions">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Descriptions</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<dl>
@@ -542,19 +667,21 @@
 	&lt;dd&gt;Nulla doloremque accusantium minus molestiae ipsa dicta&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="lists.ordered">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Ordered</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<ol>
@@ -586,19 +713,21 @@
 	&lt;li&gt;Quisque eget odio ac lectus vestibulum faucibus.&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 		<div class="f-item-group" id="lists.unordered">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Unordered</h3>
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
 			</div>
 <div class="f-item-preview">
 	<ul>
@@ -630,6 +759,16 @@
 	&lt;li&gt;Quisque eget odio ac lectus vestibulum faucibus.&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 		</div>
 
@@ -640,14 +779,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Paragraph</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div>
 <div class="f-item-preview">
 	<p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor,
@@ -663,6 +794,16 @@
 	nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
 </div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
 
 
 </div>
@@ -672,14 +813,6 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Table</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
 	</div>
 <div class="f-item-preview">
 	<table>
@@ -760,6 +893,16 @@
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
 </div>
 
 
