@@ -100,6 +100,9 @@
 						<li>
 							<a href="/02-helpers.html#text">Text</a>
 						</li>
+						<li>
+							<a href="/02-helpers.html#visibility">Visibility</a>
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -187,6 +190,7 @@
 									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
 								<option value="/02-helpers.html#spacings">Spacings</option>
 								<option value="/02-helpers.html#text">Text</option>
+								<option value="/02-helpers.html#visibility">Visibility</option>
 								<option value="/03-components.html#box">Box</option>
 									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
 									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
@@ -637,6 +641,39 @@
 &lt;p class=&quot;text-large&quot;&gt;Large text&lt;/p&gt;
 
 &lt;p class=&quot;text-muted&quot;&gt;Text muted&lt;/p&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="visibility">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Visibility</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Hide content to the end user: completely hidden, invisible or hidden for everyone but screen readers.</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="is-hidden">I’m a paragraph hidden with `display: none`.</p>
+<p class="is-invisible">I’m a ghost paragraph thanks to `visibility: hidden`.</p>
+<p class="sr-only">I’m a paragraph only accessible to screen readers.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class=&quot;is-hidden&quot;&gt;I’m a paragraph hidden with &#x60;display: none&#x60;.&lt;/p&gt;
+&lt;p class=&quot;is-invisible&quot;&gt;I’m a ghost paragraph thanks to &#x60;visibility: hidden&#x60;.&lt;/p&gt;
+&lt;p class=&quot;sr-only&quot;&gt;I’m a paragraph only accessible to screen readers.&lt;/p&gt;</code></pre>
 </div>
 <div class="f-item-controls">
 	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
