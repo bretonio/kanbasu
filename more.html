@@ -5,12 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title></title>
+	<title>More &middot; Kanbasu</title>
 
-	<link rel="stylesheet" href="../assets/fabricator/styles/f.css">
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
 	<!-- toolkit styles -->
-	<link rel="stylesheet" href="../assets/styles/kanbasu.css">
+	<link rel="stylesheet" href="/assets/styles/kanbasu.css">
 	<!-- /toolkit styles -->
 
 </head>
@@ -57,9 +57,14 @@
 			</div>
 		
 			<ul>
-		
 				<li>
 					<a href="/index.html" class="f-menu__heading">Overview</a>
+		
+					<ul>
+							<li>
+								<a href="/settings.html">Settings</a>
+							</li>
+					</ul>
 				</li>
 		
 				<li>
@@ -86,22 +91,22 @@
 					<a href="/02-helpers.html" class="f-menu__heading">Helpers</a>
 					<ul>
 						<li>
+							<a href="/02-helpers.html#display">Display</a>
+						</li>
+						<li>
 							<a href="/02-helpers.html#float">Float</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#positionning">Positionning</a>
+							<a href="/02-helpers.html#images">Images</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#responsive">Responsive</a>
+							<a href="/02-helpers.html#positioning">Positioning</a>
 						</li>
 						<li>
 							<a href="/02-helpers.html#spacings">Spacings</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#text">Text</a>
-						</li>
-						<li>
-							<a href="/02-helpers.html#visibility">Visibility</a>
+							<a href="/02-helpers.html#typography">Typography</a>
 						</li>
 					</ul>
 				</li>
@@ -147,24 +152,17 @@
 				</li>
 		
 				<li>
-					<a href="/pages.html" class="f-menu__heading">Pages</a>
+					<a href="/more.html" class="f-menu__heading">More</a>
 					<ul>
 						<li>
-							<a href="/pages/example-layout.html">Example Layout</a>
+							<a href="/more/example-layout.html">Example Layout</a>
+						</li>
+						<li>
+							<a href="/more/faq.html">Faq</a>
 						</li>
 					</ul>
 				</li>
-		
-				<!--
-				<li>
-					<a href="/docs.html" class="f-menu__heading">Docs</a>
-					<ul>
-					</ul>
-				</li>
-				-->
-		
 			</ul>
-		
 		
 		</div>
 		<!-- /fabricator menu -->
@@ -175,22 +173,21 @@
 									<option value="/01-defaults.html#forms.01.input">Forms &middot; Input</option>
 									<option value="/01-defaults.html#forms.02.select">Forms &middot; Select</option>
 									<option value="/01-defaults.html#forms.03.textarea">Forms &middot; Textarea</option>
-									<option value="/01-defaults.html#forms.04.checkbox-&amp;-radio">Forms &middot; Checkbox &amp; Radio</option>
-									<option value="/01-defaults.html#forms.05.checkbox-&amp;-radio-inline">Forms &middot; Checkbox &amp; Radio Inline</option>
-									<option value="/01-defaults.html#forms.06.input-&amp;-select-size">Forms &middot; Input &amp; Select Size</option>
+									<option value="/01-defaults.html#forms.04.checkbox-and-radio">Forms &middot; Checkbox And Radio</option>
+									<option value="/01-defaults.html#forms.05.checkbox-and-radio-inline">Forms &middot; Checkbox And Radio Inline</option>
+									<option value="/01-defaults.html#forms.06.input-and-select-size">Forms &middot; Input And Select Size</option>
 								<option value="/01-defaults.html#headings">Headings</option>
 									<option value="/01-defaults.html#lists.descriptions">Lists &middot; Descriptions</option>
 									<option value="/01-defaults.html#lists.ordered">Lists &middot; Ordered</option>
 									<option value="/01-defaults.html#lists.unordered">Lists &middot; Unordered</option>
 								<option value="/01-defaults.html#paragraph">Paragraph</option>
 								<option value="/01-defaults.html#table">Table</option>
+								<option value="/02-helpers.html#display">Display</option>
 								<option value="/02-helpers.html#float">Float</option>
-								<option value="/02-helpers.html#positionning">Positionning</option>
-									<option value="/02-helpers.html#responsive.display">Responsive &middot; Display</option>
-									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
+								<option value="/02-helpers.html#images">Images</option>
+								<option value="/02-helpers.html#positioning">Positioning</option>
 								<option value="/02-helpers.html#spacings">Spacings</option>
-								<option value="/02-helpers.html#text">Text</option>
-								<option value="/02-helpers.html#visibility">Visibility</option>
+								<option value="/02-helpers.html#typography">Typography</option>
 								<option value="/03-components.html#box">Box</option>
 									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
 									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
@@ -224,115 +221,29 @@
 
 
 	
-<h1>Example layout</h1>
+<h1 data-f-toggle="labels">More</h1>
 
-<p>This page is built with Kanbasu components and image placeholders only. You can <a href="https://github.com/liip/kanbasu/blob/master/src/views/pages/example-layout.html">browse the code</a> on Github.</p>
+<ul>
 
-<header class="clearfix box box--small box--primary">
-	<div class="pull-left">
-		<h1 class="mrg0">Hello!</h1>
-	</div>
-	<div class="pull-right">
-		<ul class="list-inline">
-			<li><a href="#" class="btn btn--md">Home</a></li>
-			<li><a href="#" class="btn btn--md">Services</a></li>
-			<li><a href="#" class="btn btn--md">Help desk</a></li>
-			<li><a href="#" class="btn btn--md">Solutions</a></li>
-			<li><a href="#" class="btn btn--md">Contact</a></li>
-		</ul>
-	</div>
-</header>
+	<li>
+		<a href="more/example-layout.html" class="f-item-heading">Example Layout</a>
+	</li>
 
-<div class="masterhead mrgb+ relative-parent">
-	<img src="http://placehold.it/1400x250/68528f/?text=&nbsp;" class="img-block">
-	<div class="vh-align">
-		<h1>Such a masterhead wow</h1>
-	</div>
-</div>
 
-<div class="grid">
-	<div class="grid__item sm-w-3/4">
-		<ul class="list-stacked list-stacked--divided">
-			<li>
-				<div class="media">
-					<div class="media__left">
-						<img src="http://placehold.it/160x160" class="media__image">
-					</div>
-					<div class="media__body">
-						<h3>Dolores consectetur harum cupiditate fugiat</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea laudantium, dolorum autem possimus enim eligendi ut, temporibus a adipisci nihil labore similique iste incidunt facere, et aliquam quaerat quia.</p>
-						<p><a href="#">Read more…</a></p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="media">
-					<div class="media__left">
-						<img src="http://placehold.it/160x160" class="media__image">
-					</div>
-					<div class="media__body">
-						<h3>Veniam soluta ex inventore unde</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea laudantium, dolorum autem possimus enim eligendi ut, temporibus a adipisci nihil labore similique iste incidunt facere, et aliquam quaerat quia.</p>
-						<p><a href="#">Read more…</a></p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="media">
-					<div class="media__left">
-						<img src="http://placehold.it/160x160" class="media__image">
-					</div>
-					<div class="media__body">
-						<h3>Iste architecto cum recusandae eius</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea laudantium, dolorum autem possimus enim eligendi ut, temporibus a adipisci nihil labore similique iste incidunt facere, et aliquam quaerat quia.</p>
-						<p><a href="#">Read more…</a></p>
-					</div>
-				</div>
-			</li>
-		</ul>
+	<li>
+		<a href="more/faq.html" class="f-item-heading">Faq</a>
+	</li>
 
-		<div class="mosaic mrgt+ box box--tight box--primary">
-			<div class="mosaic__cell mosaic__cell--fit">
-				<img src="http://placehold.it/300x300/82bb58">
-			</div>
-			<div class="mosaic__cell box">
-				<h3>Lorem ipsum</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis officiis quidem vero mollitia reiciendis at eius, facere inventore fugiat eaque dolorum maxime autem quo saepe quos perferendis dolores quaerat.</p>
-				<p><a href="#">Read more…</a></p>
-			</div>
-		</div>
-	</div>
-	<aside class="grid__item sm-w-1/4 xs-mrgt">
-		<div class="box box--default">
-			<h4>Lorem ipsum dolor sit</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis deleniti illo cum itaque, fugit debitis sint natus magni.</p>
-		</div>
-		<div class="box box--default mrgt">
-			<form>
-				<div class="form-group">
-					<label for="search" class="field-label">Search</label>
-					<input type="search">
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Search" class="btn btn--md btn--primary">
-				</div>
-			</form>
-		</div>
-	</aside>
-</div>
-
-<footer class="box box--default mrgt+">
-	<p class="text-small">Copyleft 2015, no rights reserved.</p>
-</footer>
+</ul>
 
 
 
 			</div>
 		</div>
-	<script src="../assets/fabricator/scripts/f.js"></script>
+	<script src="/assets/fabricator/scripts/f.js"></script>
 
 	<!-- toolkit scripts -->
-	<script src="../assets/scripts/kanbasu.js"></script>
+	<script src="/assets/scripts/kanbasu.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>

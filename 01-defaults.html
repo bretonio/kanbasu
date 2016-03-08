@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Defaults · Kanbasu</title>
+	<title>Defaults &middot; Kanbasu</title>
 
 	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
@@ -57,9 +57,14 @@
 			</div>
 		
 			<ul>
-		
 				<li>
 					<a href="/index.html" class="f-menu__heading">Overview</a>
+		
+					<ul>
+							<li>
+								<a href="/settings.html">Settings</a>
+							</li>
+					</ul>
 				</li>
 		
 				<li>
@@ -86,22 +91,22 @@
 					<a href="/02-helpers.html" class="f-menu__heading">Helpers</a>
 					<ul>
 						<li>
+							<a href="/02-helpers.html#display">Display</a>
+						</li>
+						<li>
 							<a href="/02-helpers.html#float">Float</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#positionning">Positionning</a>
+							<a href="/02-helpers.html#images">Images</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#responsive">Responsive</a>
+							<a href="/02-helpers.html#positioning">Positioning</a>
 						</li>
 						<li>
 							<a href="/02-helpers.html#spacings">Spacings</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#text">Text</a>
-						</li>
-						<li>
-							<a href="/02-helpers.html#visibility">Visibility</a>
+							<a href="/02-helpers.html#typography">Typography</a>
 						</li>
 					</ul>
 				</li>
@@ -147,24 +152,17 @@
 				</li>
 		
 				<li>
-					<a href="/pages.html" class="f-menu__heading">Pages</a>
+					<a href="/more.html" class="f-menu__heading">More</a>
 					<ul>
 						<li>
-							<a href="/pages/example-layout.html">Example Layout</a>
+							<a href="/more/example-layout.html">Example Layout</a>
+						</li>
+						<li>
+							<a href="/more/faq.html">Faq</a>
 						</li>
 					</ul>
 				</li>
-		
-				<!--
-				<li>
-					<a href="/docs.html" class="f-menu__heading">Docs</a>
-					<ul>
-					</ul>
-				</li>
-				-->
-		
 			</ul>
-		
 		
 		</div>
 		<!-- /fabricator menu -->
@@ -175,22 +173,21 @@
 									<option value="/01-defaults.html#forms.01.input">Forms &middot; Input</option>
 									<option value="/01-defaults.html#forms.02.select">Forms &middot; Select</option>
 									<option value="/01-defaults.html#forms.03.textarea">Forms &middot; Textarea</option>
-									<option value="/01-defaults.html#forms.04.checkbox-&amp;-radio">Forms &middot; Checkbox &amp; Radio</option>
-									<option value="/01-defaults.html#forms.05.checkbox-&amp;-radio-inline">Forms &middot; Checkbox &amp; Radio Inline</option>
-									<option value="/01-defaults.html#forms.06.input-&amp;-select-size">Forms &middot; Input &amp; Select Size</option>
+									<option value="/01-defaults.html#forms.04.checkbox-and-radio">Forms &middot; Checkbox And Radio</option>
+									<option value="/01-defaults.html#forms.05.checkbox-and-radio-inline">Forms &middot; Checkbox And Radio Inline</option>
+									<option value="/01-defaults.html#forms.06.input-and-select-size">Forms &middot; Input And Select Size</option>
 								<option value="/01-defaults.html#headings">Headings</option>
 									<option value="/01-defaults.html#lists.descriptions">Lists &middot; Descriptions</option>
 									<option value="/01-defaults.html#lists.ordered">Lists &middot; Ordered</option>
 									<option value="/01-defaults.html#lists.unordered">Lists &middot; Unordered</option>
 								<option value="/01-defaults.html#paragraph">Paragraph</option>
 								<option value="/01-defaults.html#table">Table</option>
+								<option value="/02-helpers.html#display">Display</option>
 								<option value="/02-helpers.html#float">Float</option>
-								<option value="/02-helpers.html#positionning">Positionning</option>
-									<option value="/02-helpers.html#responsive.display">Responsive &middot; Display</option>
-									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
+								<option value="/02-helpers.html#images">Images</option>
+								<option value="/02-helpers.html#positioning">Positioning</option>
 								<option value="/02-helpers.html#spacings">Spacings</option>
-								<option value="/02-helpers.html#text">Text</option>
-								<option value="/02-helpers.html#visibility">Visibility</option>
+								<option value="/02-helpers.html#typography">Typography</option>
 								<option value="/03-components.html#box">Box</option>
 									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
 									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
@@ -229,13 +226,18 @@
 
 <div class="f-item-group" id="forms">
 
-	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Forms</h2>
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Forms</h2>
 	</div>
-		<div class="f-item-group" id="forms.01.input">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Input</h3>
-			</div>
+
+			<div class="f-item-group" id="forms.01.input">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Input</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<div class="form-group">
 	<label class="field-label" for="text">Text</label>
@@ -307,16 +309,19 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="forms.02.select">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Select</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Notice: some browsers don’t care about <code>border-radius</code> property applied to select.</p>
+			</div>
+			<div class="f-item-group" id="forms.02.select">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Select</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Notice: some browsers don’t care about <code>border-radius</code> property applied to select.</p>
 
 </div>
 <div class="f-item-preview">
-	<select id="select">
+	<select>
 	<option selected></option>
 	<option>Option 1</option>
 	<option>Option 2</option>
@@ -324,7 +329,7 @@
 </select>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select id=&quot;select&quot;&gt;
+	<pre><code class="language-markup">&lt;select&gt;
 	&lt;option selected&gt;&lt;/option&gt;
 	&lt;option&gt;Option 1&lt;/option&gt;
 	&lt;option&gt;Option 2&lt;/option&gt;
@@ -342,19 +347,22 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="forms.03.textarea">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Textarea</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Use the <code>rows</code> attribute to make it higher.</p>
+			</div>
+			<div class="f-item-group" id="forms.03.textarea">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Textarea</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Use the <code>rows</code> attribute to make it higher.</p>
 
 </div>
 <div class="f-item-preview">
-	<textarea id="textarea"></textarea>
+	<textarea></textarea>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;textarea id=&quot;textarea&quot;&gt;&lt;/textarea&gt;</code></pre>
+	<pre><code class="language-markup">&lt;textarea&gt;&lt;/textarea&gt;</code></pre>
 </div>
 <div class="f-item-controls">
 	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
@@ -367,11 +375,15 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="forms.04.checkbox-&amp;-radio">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Checkbox &amp; Radio</h3>
 			</div>
+			<div class="f-item-group" id="forms.04.checkbox-and-radio">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Checkbox And Radio</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<div class="form-group">
 	<label for="checkbox-4">
@@ -431,11 +443,15 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="forms.05.checkbox-&amp;-radio-inline">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Checkbox &amp; Radio Inline</h3>
 			</div>
+			<div class="f-item-group" id="forms.05.checkbox-and-radio-inline">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Checkbox And Radio Inline</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<div class="form-group">
 	<label for="checkbox-1" class="label--inline">
@@ -495,11 +511,17 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="forms.06.input-&amp;-select-size">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Input &amp; Select Size</h3>
 			</div>
+			<div class="f-item-group" id="forms.06.input-and-select-size">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Input And Select Size</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+		<div class="text-muted"><p>Select since 1.2.0</p>
+</div>
+
+
+</div>
 <div class="f-item-preview">
 	<div class="form-group">
 	<input type="text" class="input--small" placeholder="Small">
@@ -583,7 +605,7 @@
 	</span>
 </div>
 
-		</div>
+			</div>
 
 </div>
 
@@ -593,6 +615,13 @@
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Headings</h2>
 	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>You can also apply these styles to other elements with <code>.h1</code>, <code>.h2</code>, …</p>
+
+</div>
 <div class="f-item-preview">
 	<h1>Lorem ipsum dolor sit amet</h1>
 <h2>Lorem ipsum dolor sit amet</h2>
@@ -626,13 +655,18 @@
 
 <div class="f-item-group" id="lists">
 
-	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Lists</h2>
 	</div>
-		<div class="f-item-group" id="lists.descriptions">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Descriptions</h3>
-			</div>
+
+			<div class="f-item-group" id="lists.descriptions">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Descriptions</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<dl>
 	<dt>Lorem</dt>
@@ -682,11 +716,15 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="lists.ordered">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Ordered</h3>
 			</div>
+			<div class="f-item-group" id="lists.ordered">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Ordered</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<ol>
 	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -728,11 +766,15 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="lists.unordered">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Unordered</h3>
 			</div>
+			<div class="f-item-group" id="lists.unordered">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Unordered</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<ul>
 	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -774,7 +816,7 @@
 	</span>
 </div>
 
-		</div>
+			</div>
 
 </div>
 
@@ -784,6 +826,11 @@
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Paragraph</h2>
 	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor,
 	lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -818,6 +865,11 @@
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Table</h2>
 	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<table>
 	<thead>
@@ -827,13 +879,6 @@
 			<th>Table Heading 3</th>
 		</tr>
 	</thead>
-	<tfoot>
-		<tr>
-			<th>Table Footer 1</th>
-			<th>Table Footer 2</th>
-			<th>Table Footer 3</th>
-		</tr>
-	</tfoot>
 	<tbody>
 		<tr>
 			<td>Table Cell 1</td>
@@ -856,6 +901,13 @@
 			<td>Table Cell 3</td>
 		</tr>
 	</tbody>
+	<tfoot>
+		<tr>
+			<th>Table Footer 1</th>
+			<th>Table Footer 2</th>
+			<th>Table Footer 3</th>
+		</tr>
+	</tfoot>
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -867,13 +919,6 @@
 			&lt;th&gt;Table Heading 3&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tfoot&gt;
-		&lt;tr&gt;
-			&lt;th&gt;Table Footer 1&lt;/th&gt;
-			&lt;th&gt;Table Footer 2&lt;/th&gt;
-			&lt;th&gt;Table Footer 3&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/tfoot&gt;
 	&lt;tbody&gt;
 		&lt;tr&gt;
 			&lt;td&gt;Table Cell 1&lt;/td&gt;
@@ -896,6 +941,13 @@
 			&lt;td&gt;Table Cell 3&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Footer 1&lt;/th&gt;
+			&lt;th&gt;Table Footer 2&lt;/th&gt;
+			&lt;th&gt;Table Footer 3&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
 &lt;/table&gt;</code></pre>
 </div>
 <div class="f-item-controls">

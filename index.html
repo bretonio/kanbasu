@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>カンバス Kanbasu CSS Framework</title>
+	<title>カンバス Kanbasu, the CSS Framework</title>
 
 	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
@@ -57,9 +57,14 @@
 			</div>
 		
 			<ul>
-		
 				<li>
 					<a href="/index.html" class="f-menu__heading">Overview</a>
+		
+					<ul>
+							<li>
+								<a href="/settings.html">Settings</a>
+							</li>
+					</ul>
 				</li>
 		
 				<li>
@@ -86,22 +91,22 @@
 					<a href="/02-helpers.html" class="f-menu__heading">Helpers</a>
 					<ul>
 						<li>
+							<a href="/02-helpers.html#display">Display</a>
+						</li>
+						<li>
 							<a href="/02-helpers.html#float">Float</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#positionning">Positionning</a>
+							<a href="/02-helpers.html#images">Images</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#responsive">Responsive</a>
+							<a href="/02-helpers.html#positioning">Positioning</a>
 						</li>
 						<li>
 							<a href="/02-helpers.html#spacings">Spacings</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#text">Text</a>
-						</li>
-						<li>
-							<a href="/02-helpers.html#visibility">Visibility</a>
+							<a href="/02-helpers.html#typography">Typography</a>
 						</li>
 					</ul>
 				</li>
@@ -147,24 +152,17 @@
 				</li>
 		
 				<li>
-					<a href="/pages.html" class="f-menu__heading">Pages</a>
+					<a href="/more.html" class="f-menu__heading">More</a>
 					<ul>
 						<li>
-							<a href="/pages/example-layout.html">Example Layout</a>
+							<a href="/more/example-layout.html">Example Layout</a>
+						</li>
+						<li>
+							<a href="/more/faq.html">Faq</a>
 						</li>
 					</ul>
 				</li>
-		
-				<!--
-				<li>
-					<a href="/docs.html" class="f-menu__heading">Docs</a>
-					<ul>
-					</ul>
-				</li>
-				-->
-		
 			</ul>
-		
 		
 		</div>
 		<!-- /fabricator menu -->
@@ -175,22 +173,21 @@
 									<option value="/01-defaults.html#forms.01.input">Forms &middot; Input</option>
 									<option value="/01-defaults.html#forms.02.select">Forms &middot; Select</option>
 									<option value="/01-defaults.html#forms.03.textarea">Forms &middot; Textarea</option>
-									<option value="/01-defaults.html#forms.04.checkbox-&amp;-radio">Forms &middot; Checkbox &amp; Radio</option>
-									<option value="/01-defaults.html#forms.05.checkbox-&amp;-radio-inline">Forms &middot; Checkbox &amp; Radio Inline</option>
-									<option value="/01-defaults.html#forms.06.input-&amp;-select-size">Forms &middot; Input &amp; Select Size</option>
+									<option value="/01-defaults.html#forms.04.checkbox-and-radio">Forms &middot; Checkbox And Radio</option>
+									<option value="/01-defaults.html#forms.05.checkbox-and-radio-inline">Forms &middot; Checkbox And Radio Inline</option>
+									<option value="/01-defaults.html#forms.06.input-and-select-size">Forms &middot; Input And Select Size</option>
 								<option value="/01-defaults.html#headings">Headings</option>
 									<option value="/01-defaults.html#lists.descriptions">Lists &middot; Descriptions</option>
 									<option value="/01-defaults.html#lists.ordered">Lists &middot; Ordered</option>
 									<option value="/01-defaults.html#lists.unordered">Lists &middot; Unordered</option>
 								<option value="/01-defaults.html#paragraph">Paragraph</option>
 								<option value="/01-defaults.html#table">Table</option>
+								<option value="/02-helpers.html#display">Display</option>
 								<option value="/02-helpers.html#float">Float</option>
-								<option value="/02-helpers.html#positionning">Positionning</option>
-									<option value="/02-helpers.html#responsive.display">Responsive &middot; Display</option>
-									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
+								<option value="/02-helpers.html#images">Images</option>
+								<option value="/02-helpers.html#positioning">Positioning</option>
 								<option value="/02-helpers.html#spacings">Spacings</option>
-								<option value="/02-helpers.html#text">Text</option>
-								<option value="/02-helpers.html#visibility">Visibility</option>
+								<option value="/02-helpers.html#typography">Typography</option>
 								<option value="/03-components.html#box">Box</option>
 									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
 									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
@@ -230,7 +227,7 @@
 
 <ul class="list-inline text-center">
 	<li>
-		<a href="https://github.com/liip/kanbasu" title="View code on GitHub">Version 1.2.2</a>
+		<a href="https://github.com/liip/kanbasu" title="View code on GitHub">Version 1.3.0</a>
 	</li>
 	<li class="hidden-xs">
 		<a class="github-button" href="https://github.com/liip/kanbasu" data-icon="octicon-star" data-style="mega" data-count-href="/liip/kanbasu/stargazers" data-count-api="/repos/liip/kanbasu#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star liip/kanbasu on GitHub">Star</a>
@@ -267,7 +264,7 @@
 
 <h3>Setup</h3>
 
-<p>It’s recommended to copy the framework main file to your project to customize it as you wish. You’ll have to change all "import" paths to match the framwork location then.</p>
+<p>It’s recommended to copy the framework main file to your project to customize it as you wish. You’ll have to change all <code>@import</code> paths to match the framework location then.</p>
 
 <pre>$ cp node_modules/kanbasu/src/assets/scss/kanbasu.scss destination/kanbasu.scss</pre>
 

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Components · Kanbasu</title>
+	<title>Components &middot; Kanbasu</title>
 
 	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
@@ -57,9 +57,14 @@
 			</div>
 		
 			<ul>
-		
 				<li>
 					<a href="/index.html" class="f-menu__heading">Overview</a>
+		
+					<ul>
+							<li>
+								<a href="/settings.html">Settings</a>
+							</li>
+					</ul>
 				</li>
 		
 				<li>
@@ -86,22 +91,22 @@
 					<a href="/02-helpers.html" class="f-menu__heading">Helpers</a>
 					<ul>
 						<li>
+							<a href="/02-helpers.html#display">Display</a>
+						</li>
+						<li>
 							<a href="/02-helpers.html#float">Float</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#positionning">Positionning</a>
+							<a href="/02-helpers.html#images">Images</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#responsive">Responsive</a>
+							<a href="/02-helpers.html#positioning">Positioning</a>
 						</li>
 						<li>
 							<a href="/02-helpers.html#spacings">Spacings</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#text">Text</a>
-						</li>
-						<li>
-							<a href="/02-helpers.html#visibility">Visibility</a>
+							<a href="/02-helpers.html#typography">Typography</a>
 						</li>
 					</ul>
 				</li>
@@ -147,24 +152,17 @@
 				</li>
 		
 				<li>
-					<a href="/pages.html" class="f-menu__heading">Pages</a>
+					<a href="/more.html" class="f-menu__heading">More</a>
 					<ul>
 						<li>
-							<a href="/pages/example-layout.html">Example Layout</a>
+							<a href="/more/example-layout.html">Example Layout</a>
+						</li>
+						<li>
+							<a href="/more/faq.html">Faq</a>
 						</li>
 					</ul>
 				</li>
-		
-				<!--
-				<li>
-					<a href="/docs.html" class="f-menu__heading">Docs</a>
-					<ul>
-					</ul>
-				</li>
-				-->
-		
 			</ul>
-		
 		
 		</div>
 		<!-- /fabricator menu -->
@@ -175,22 +173,21 @@
 									<option value="/01-defaults.html#forms.01.input">Forms &middot; Input</option>
 									<option value="/01-defaults.html#forms.02.select">Forms &middot; Select</option>
 									<option value="/01-defaults.html#forms.03.textarea">Forms &middot; Textarea</option>
-									<option value="/01-defaults.html#forms.04.checkbox-&amp;-radio">Forms &middot; Checkbox &amp; Radio</option>
-									<option value="/01-defaults.html#forms.05.checkbox-&amp;-radio-inline">Forms &middot; Checkbox &amp; Radio Inline</option>
-									<option value="/01-defaults.html#forms.06.input-&amp;-select-size">Forms &middot; Input &amp; Select Size</option>
+									<option value="/01-defaults.html#forms.04.checkbox-and-radio">Forms &middot; Checkbox And Radio</option>
+									<option value="/01-defaults.html#forms.05.checkbox-and-radio-inline">Forms &middot; Checkbox And Radio Inline</option>
+									<option value="/01-defaults.html#forms.06.input-and-select-size">Forms &middot; Input And Select Size</option>
 								<option value="/01-defaults.html#headings">Headings</option>
 									<option value="/01-defaults.html#lists.descriptions">Lists &middot; Descriptions</option>
 									<option value="/01-defaults.html#lists.ordered">Lists &middot; Ordered</option>
 									<option value="/01-defaults.html#lists.unordered">Lists &middot; Unordered</option>
 								<option value="/01-defaults.html#paragraph">Paragraph</option>
 								<option value="/01-defaults.html#table">Table</option>
+								<option value="/02-helpers.html#display">Display</option>
 								<option value="/02-helpers.html#float">Float</option>
-								<option value="/02-helpers.html#positionning">Positionning</option>
-									<option value="/02-helpers.html#responsive.display">Responsive &middot; Display</option>
-									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
+								<option value="/02-helpers.html#images">Images</option>
+								<option value="/02-helpers.html#positioning">Positioning</option>
 								<option value="/02-helpers.html#spacings">Spacings</option>
-								<option value="/02-helpers.html#text">Text</option>
-								<option value="/02-helpers.html#visibility">Visibility</option>
+								<option value="/02-helpers.html#typography">Typography</option>
 								<option value="/03-components.html#box">Box</option>
 									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
 									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
@@ -231,8 +228,12 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Box</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>By default two styling modifiers are provided: <code>default</code> and <code>primary</code>. Remove the default padding with <code>tight</code>, adjust it according to the spacing settings with <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>.</p>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>By default two styling modifiers are provided: <code>default</code> and <code>primary</code>. Remove the default padding with <code>tight</code>, adjust it according to the spacing settings with <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>.</p>
 
 </div>
 <div class="f-item-preview">
@@ -240,19 +241,22 @@
 	<div class="grid__item md-w-1/3">
 		<div class="box">
 			<h3>Lorem ipsum</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae <a href="#">ullam magnam</a> omnis nostrum, facere, accusantium at!</p>
+			<p><a href="#" class="btn btn--primary btn--block">Button</a></p>
 		</div>
 	</div>
 	<div class="grid__item md-w-1/3">
 		<div class="box box--default">
 			<h3>Lorem ipsum</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae <a href="#">ullam magnam</a> omnis nostrum, facere, accusantium at!</p>
+			<p><a href="#" class="btn btn--primary btn--block">Button</a></p>
 		</div>
 	</div>
 	<div class="grid__item md-w-1/3">
 		<div class="box box--primary">
 			<h3>Lorem ipsum</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae <a href="#">ullam magnam</a> omnis nostrum, facere, accusantium at!</p>
+			<p><a href="#" class="btn btn--default btn--block">Button</a></p>
 		</div>
 	</div>
 </div>
@@ -262,19 +266,22 @@
 	&lt;div class=&quot;grid__item md-w-1/3&quot;&gt;
 		&lt;div class=&quot;box&quot;&gt;
 			&lt;h3&gt;Lorem ipsum&lt;/h3&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!&lt;/p&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae &lt;a href=&quot;#&quot;&gt;ullam magnam&lt;/a&gt; omnis nostrum, facere, accusantium at!&lt;/p&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--block&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;grid__item md-w-1/3&quot;&gt;
 		&lt;div class=&quot;box box--default&quot;&gt;
 			&lt;h3&gt;Lorem ipsum&lt;/h3&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!&lt;/p&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae &lt;a href=&quot;#&quot;&gt;ullam magnam&lt;/a&gt; omnis nostrum, facere, accusantium at!&lt;/p&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--block&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;grid__item md-w-1/3&quot;&gt;
 		&lt;div class=&quot;box box--primary&quot;&gt;
 			&lt;h3&gt;Lorem ipsum&lt;/h3&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae ullam magnam omnis nostrum, facere, accusantium at!&lt;/p&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio suscipit eligendi et nesciunt autem iste laborum inventore fugiat repudiandae nisi voluptate soluta recusandae &lt;a href=&quot;#&quot;&gt;ullam magnam&lt;/a&gt; omnis nostrum, facere, accusantium at!&lt;/p&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--default btn--block&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -296,14 +303,18 @@
 
 <div class="f-item-group" id="buttons">
 
-	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Buttons</h2>
 	</div>
-		<div class="f-item-group" id="buttons.base">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Base</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>By default, we normalize button style to the minimum. Use the sizes, styles and variants classes to make them shinier. You can also use this as a base for any custom button.</p>
+
+			<div class="f-item-group" id="buttons.base">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Base</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>By default, we normalize button style to the minimum. Use the sizes, styles and variants classes to make them shinier. You can also use this as a base for any custom button.</p>
 
 </div>
 <div class="f-item-preview">
@@ -327,11 +338,15 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="buttons.sizes">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Sizes</h3>
 			</div>
+			<div class="f-item-group" id="buttons.sizes">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Sizes</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<button class="btn btn--default btn--small">Small</button>
 <button class="btn btn--default">Regular</button>
@@ -353,11 +368,15 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="buttons.states">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">States</h3>
 			</div>
+			<div class="f-item-group" id="buttons.states">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">States</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<button class="btn btn--primary btn--md" disabled>Disabled</button>
 </div>
@@ -375,11 +394,15 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="buttons.styles">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Styles</h3>
 			</div>
+			<div class="f-item-group" id="buttons.styles">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Styles</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<button class="btn btn--md btn--default">Default</button>
 <button class="btn btn--md btn--primary">Primary</button>
@@ -399,26 +422,22 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="buttons.variants">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Variants</h3>
 			</div>
+			<div class="f-item-group" id="buttons.variants">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Variants</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
-	<p>
-	<button class="btn btn--bare">Bare button</button>
-</p>
-<p>
-	<button class="btn btn--md btn--default btn--block">Block button</button>
-</p>
+	<p><button class="btn btn--bare">Bare button</button></p>
+<p><button class="btn btn--md btn--default btn--block">Block button</button></p>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;
-	&lt;button class=&quot;btn btn--bare&quot;&gt;Bare button&lt;/button&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;button class=&quot;btn btn--md btn--default btn--block&quot;&gt;Block button&lt;/button&gt;
-&lt;/p&gt;</code></pre>
+	<pre><code class="language-markup">&lt;p&gt;&lt;button class=&quot;btn btn--bare&quot;&gt;Bare button&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button class=&quot;btn btn--md btn--default btn--block&quot;&gt;Block button&lt;/button&gt;&lt;/p&gt;</code></pre>
 </div>
 <div class="f-item-controls">
 	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
@@ -431,7 +450,7 @@
 	</span>
 </div>
 
-		</div>
+			</div>
 
 </div>
 
@@ -440,8 +459,12 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Embed Responsive</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Thanks to <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a> and <a href="https://github.com/suitcss/suit">SUIT CSS</a>.</p>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Thanks to <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a> and <a href="https://github.com/suitcss/suit">SUIT CSS</a>.</p>
 
 </div>
 <div class="f-item-preview">
@@ -493,135 +516,141 @@
 
 <div class="f-item-group" id="grid-and-widths">
 
-	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Grid And Widths</h2>
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Grid And Widths</h2>
 	</div>
-		<div class="f-item-group" id="grid-and-widths.01.widths">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Widths</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Widths are percentages represented by fractions. All classes are constructed like <code>.w-{nominator}/{denominator}</code>. By default you have halves, thirds, quarters, fifths and sixths. You can easily add more by changing the <code>$widths-columns</code> setting. Widths are independent from the grid, you’re free to use them anywhere, with other components such as mosaic, media, etc.</p>
+
+			<div class="f-item-group" id="grid-and-widths.01.widths">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Widths</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Widths are percentages represented by fractions. All classes are constructed like <code>.w-{nominator}/{denominator}</code>. By default you have halves, thirds, quarters, fifths and sixths. You can easily add more by changing the <code>$widths-columns</code> setting.</p>
+<p>Widths are independent from the grid, you’re free to use them anywhere, with other components such as mosaic, media, etc.</p>
+<p>Note that only the smallest fractions are generated; for example <code>.w-2/4</code> doesn’t exist when both quarters and halves are in the settings, <code>.w-1/2</code> take over it.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="grid">
-	<div class="grid__item w-1/6">
-		<div class="box box--default box--tiny text-center">1/6</div>
+	<div class="( grid )">
+	<div class="w-1/6 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">1/6</div>
 	</div>
-	<div class="grid__item w-5/6">
-		<div class="box box--default box--tiny text-center">5/6</div>
-	</div>
-</div>
-
-<div class="grid mrgt">
-	<div class="grid__item w-1/5">
-		<div class="box box--default box--tiny text-center">1/5</div>
-	</div>
-	<div class="grid__item w-4/5">
-		<div class="box box--default box--tiny text-center">4/5</div>
+	<div class="w-5/6 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">5/6</div>
 	</div>
 </div>
 
-<div class="grid mrgt">
-	<div class="grid__item w-1/4">
-		<div class="box box--default box--tiny text-center">1/4</div>
+<div class="( grid ) mrgt">
+	<div class="w-1/5 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">1/5</div>
 	</div>
-	<div class="grid__item w-3/4">
-		<div class="box box--default box--tiny text-center">3/4</div>
-	</div>
-</div>
-
-<div class="grid mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">1/3</div>
-	</div>
-	<div class="grid__item w-2/3">
-		<div class="box box--default box--tiny text-center">2/3</div>
+	<div class="w-4/5 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">4/5</div>
 	</div>
 </div>
 
-<div class="grid mrgt">
-	<div class="grid__item w-2/5">
-		<div class="box box--default box--tiny text-center">2/5</div>
+<div class="( grid ) mrgt">
+	<div class="w-1/4 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">1/4</div>
 	</div>
-	<div class="grid__item w-3/5">
-		<div class="box box--default box--tiny text-center">3/5</div>
-	</div>
-</div>
-
-<div class="grid mrgt">
-	<div class="grid__item w-1/2">
-		<div class="box box--default box--tiny text-center">1/2</div>
-	</div>
-	<div class="grid__item w-1/2">
-		<div class="box box--default box--tiny text-center">1/2</div>
+	<div class="w-3/4 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">3/4</div>
 	</div>
 </div>
 
-<div class="grid mrgt">
-	<div class="grid__item w-1/1">
-		<div class="box box--default box--tiny text-center">1/1</div>
+<div class="( grid ) mrgt">
+	<div class="w-1/3 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">1/3</div>
+	</div>
+	<div class="w-2/3 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">2/3</div>
+	</div>
+</div>
+
+<div class="( grid ) mrgt">
+	<div class="w-2/5 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">2/5</div>
+	</div>
+	<div class="w-3/5 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">3/5</div>
+	</div>
+</div>
+
+<div class="( grid ) mrgt">
+	<div class="w-1/2 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">1/2</div>
+	</div>
+	<div class="w-1/2 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">1/2</div>
+	</div>
+</div>
+
+<div class="( grid ) mrgt">
+	<div class="w-1/1 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )">1/1</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/6&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;1/6&lt;/div&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;( grid )&quot;&gt;
+	&lt;div class=&quot;w-1/6 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;1/6&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-5/6&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;5/6&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/5&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;1/5&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-4/5&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;4/5&lt;/div&gt;
+	&lt;div class=&quot;w-5/6 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;5/6&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/4&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;1/4&lt;/div&gt;
+&lt;div class=&quot;( grid ) mrgt&quot;&gt;
+	&lt;div class=&quot;w-1/5 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;1/5&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-3/4&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;3/4&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;1/3&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-2/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;2/3&lt;/div&gt;
+	&lt;div class=&quot;w-4/5 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;4/5&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-2/5&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;2/5&lt;/div&gt;
+&lt;div class=&quot;( grid ) mrgt&quot;&gt;
+	&lt;div class=&quot;w-1/4 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;1/4&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-3/5&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;3/5&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/2&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;1/2&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/2&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;1/2&lt;/div&gt;
+	&lt;div class=&quot;w-3/4 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;3/4&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/1&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;1/1&lt;/div&gt;
+&lt;div class=&quot;( grid ) mrgt&quot;&gt;
+	&lt;div class=&quot;w-1/3 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;1/3&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w-2/3 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;2/3&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;( grid ) mrgt&quot;&gt;
+	&lt;div class=&quot;w-2/5 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;2/5&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w-3/5 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;3/5&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;( grid ) mrgt&quot;&gt;
+	&lt;div class=&quot;w-1/2 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;1/2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;w-1/2 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;1/2&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;( grid ) mrgt&quot;&gt;
+	&lt;div class=&quot;w-1/1 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;1/1&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -636,193 +665,200 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="grid-and-widths.02.widths-responsive">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Widths Responsive</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Change an element width depending on predefined breakpoints. This use a mobile-first approach — it use breakpoints defined as <code>min-width</code> only — and therefor cover all upper resolutions.</p>
-
-</div>
-<div class="f-item-preview">
-	<div class="grid grid--center">
-	<div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/4">
-		<div class="box box--default box--tiny text-center"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
-	</div>
-	<div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/4 xs-mrgt">
-		<div class="box box--default box--tiny text-center"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
-	</div>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;grid grid--center&quot;&gt;
-	&lt;div class=&quot;grid__item sm-w-1/2 md-w-1/3 lg-w-1/4&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&lt;strong&gt;XS&lt;/strong&gt; 1/1 &amp;middot; &lt;strong&gt;SM&lt;/strong&gt; 1/2 &amp;middot; &lt;strong&gt;MD&lt;/strong&gt; 1/3 &amp;middot; &lt;strong&gt;LG&lt;/strong&gt; 1/4&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item sm-w-1/2 md-w-1/3 lg-w-1/4 xs-mrgt&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&lt;strong&gt;XS&lt;/strong&gt; 1/1 &amp;middot; &lt;strong&gt;SM&lt;/strong&gt; 1/2 &amp;middot; &lt;strong&gt;MD&lt;/strong&gt; 1/3 &amp;middot; &lt;strong&gt;LG&lt;/strong&gt; 1/4&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-<div class="f-item-controls">
-	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
-		<span class="f-icon">
-			<svg>
-				<use xlink:href="#f-icon-code" />
-			</svg>
-		</span>
-		Toggle code
-	</span>
-</div>
-
-		</div>
-		<div class="f-item-group" id="grid-and-widths.03.gutters">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Gutters</h3>
 			</div>
+			<div class="f-item-group" id="grid-and-widths.02.widths-responsive">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Widths Responsive</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Change an element width depending on predefined breakpoints. This use a mobile-first approach — it use breakpoints defined as <code>min-width</code> only — and therefor cover all upper resolutions.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="( grid grid--center )">
+	<div class="sm-w-1/2 md-w-1/3 lg-w-1/4 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
+	</div>
+	<div class="sm-w-1/2 md-w-1/3 lg-w-1/4 ( grid__item xs-mrgt )">
+		<div class="( box box--default box--tiny text-center )"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;( grid grid--center )&quot;&gt;
+	&lt;div class=&quot;sm-w-1/2 md-w-1/3 lg-w-1/4 ( grid__item )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&lt;strong&gt;XS&lt;/strong&gt; 1/1 &amp;middot; &lt;strong&gt;SM&lt;/strong&gt; 1/2 &amp;middot; &lt;strong&gt;MD&lt;/strong&gt; 1/3 &amp;middot; &lt;strong&gt;LG&lt;/strong&gt; 1/4&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sm-w-1/2 md-w-1/3 lg-w-1/4 ( grid__item xs-mrgt )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&lt;strong&gt;XS&lt;/strong&gt; 1/1 &amp;middot; &lt;strong&gt;SM&lt;/strong&gt; 1/2 &amp;middot; &lt;strong&gt;MD&lt;/strong&gt; 1/3 &amp;middot; &lt;strong&gt;LG&lt;/strong&gt; 1/4&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
+
+			</div>
+			<div class="f-item-group" id="grid-and-widths.03.gutters">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Gutters</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<div class="grid grid--tight">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">Tight</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">Tight</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
-	</div>
-</div>
-
-<div class="grid grid--tiny mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
-	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">Tiny</div>
-	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
 </div>
 
-<div class="grid grid--small mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+<div class="grid grid--tiny ( mrgt )">
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">Small</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">Tiny</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
+	</div>
+</div>
+
+<div class="grid grid--small ( mrgt )">
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
+	</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">Small</div>
+	</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
 </div>
 
 <div class="grid mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">Default</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">Default</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
-	</div>
-</div>
-
-<div class="grid grid--large mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
-	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">Large</div>
-	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
 </div>
 
-<div class="grid grid--huge mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+<div class="grid grid--large ( mrgt )">
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">Huge</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">Large</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
+	</div>
+</div>
+
+<div class="grid grid--huge ( mrgt )">
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
+	</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">Huge</div>
+	</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;grid grid--tight&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Tight&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Tight&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid grid--tiny mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Tiny&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid grid--small mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;grid grid--tiny ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Small&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Tiny&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid--small ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Small&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;grid mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Default&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Default&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid grid--large mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Large&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid grid--huge mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;grid grid--large ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Huge&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Large&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid--huge ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Huge&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -837,118 +873,121 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="grid-and-widths.04.alignment">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Alignment</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Change columns alignment with <code>.grid</code> modifiers; combining horizontal (center, right) and vertical (middle, bottom) alignment are possible. Top and left are the default values.</p>
+			</div>
+			<div class="f-item-group" id="grid-and-widths.04.alignment">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Alignment</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Change columns alignment with <code>.grid</code> modifiers; combining horizontal (center, right) and vertical (middle, bottom) alignment are possible. Top and left are the default values.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="grid grid--right mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">Right</div>
+	<div class="grid grid--right ( mrgt )">
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">Right</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
-	</div>
-</div>
-
-<div class="grid grid--center mrgt">
-	<div class="grid__item w-1/6">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
-	</div>
-	<div class="grid__item w-1/6">
-		<div class="box box--default box--tiny text-center">Center</div>
-	</div>
-	<div class="grid__item w-1/6">
-		<div class="box box--default box--tiny text-center">&nbsp;</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
 	</div>
 </div>
 
-<div class="grid grid--middle mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--small">
-			<p class="mrg0">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>
+<div class="grid grid--center ( mrgt )">
+	<div class="grid__item ( w-1/6 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
+	</div>
+	<div class="grid__item ( w-1/6 )">
+		<div class="( box box--default box--tiny text-center )">Center</div>
+	</div>
+	<div class="grid__item ( w-1/6 )">
+		<div class="( box box--default box--tiny text-center )">&nbsp;</div>
+	</div>
+</div>
+
+<div class="grid grid--middle ( mrgt )">
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--small )">
+			<p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>
 		</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--small text-center">Middle</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--small text-center )">Middle</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--small">
-			<p class="mrg0">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--small )">
+			<p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
 		</div>
 	</div>
 </div>
 
-<div class="grid grid--bottom mrgt">
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--small">
-			<p class="mrg0">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>
+<div class="grid grid--bottom ( mrgt )">
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--small )">
+			<p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>
 		</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--small text-center">Bottom</div>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--small text-center )">Bottom</div>
 	</div>
-	<div class="grid__item w-1/3">
-		<div class="box box--default box--small">
-			<p class="mrg0">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+	<div class="grid__item ( w-1/3 )">
+		<div class="( box box--default box--small )">
+			<p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
 		</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;grid grid--right mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Right&lt;/div&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;grid grid--right ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Right&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid grid--center mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/6&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/6&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Center&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/6&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid grid--middle mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--small&quot;&gt;
-			&lt;p class=&quot;mrg0&quot;&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.&lt;/p&gt;
+&lt;div class=&quot;grid grid--center ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/6 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/6 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Center&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/6 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;&amp;nbsp;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid--middle ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--small )&quot;&gt;
+			&lt;p&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--small text-center&quot;&gt;Middle&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--small text-center )&quot;&gt;Middle&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--small&quot;&gt;
-			&lt;p class=&quot;mrg0&quot;&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/p&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--small )&quot;&gt;
+			&lt;p&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid grid--bottom mrgt&quot;&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--small&quot;&gt;
-			&lt;p class=&quot;mrg0&quot;&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.&lt;/p&gt;
+&lt;div class=&quot;grid grid--bottom ( mrgt )&quot;&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--small )&quot;&gt;
+			&lt;p&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--small text-center&quot;&gt;Bottom&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--small text-center )&quot;&gt;Bottom&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item w-1/3&quot;&gt;
-		&lt;div class=&quot;box box--default box--small&quot;&gt;
-			&lt;p class=&quot;mrg0&quot;&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/p&gt;
+	&lt;div class=&quot;grid__item ( w-1/3 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--small )&quot;&gt;
+			&lt;p&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -964,31 +1003,34 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="grid-and-widths.05.order">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Order</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Reverse columns order with <code>.grid--rev</code> when there’s more than one per row.</p>
+			</div>
+			<div class="f-item-group" id="grid-and-widths.05.order">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Order</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Reverse columns order with <code>.grid--rev</code> when there’s more than one per row.</p>
 
 </div>
 <div class="f-item-preview">
 	<div class="grid grid--rev">
-	<div class="grid__item sm-w-1/2">
-		<div class="box box--default box--tiny text-center">First column</div>
+	<div class="grid__item ( sm-w-1/2 )">
+		<div class="( box box--default box--tiny text-center )">First column</div>
 	</div>
-	<div class="grid__item sm-w-1/2 xs-mrgt">
-		<div class="box box--default box--tiny text-center">Second column</div>
+	<div class="grid__item ( sm-w-1/2 xs-mrgt )">
+		<div class="( box box--default box--tiny text-center )">Second column</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;grid grid--rev&quot;&gt;
-	&lt;div class=&quot;grid__item sm-w-1/2&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;First column&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( sm-w-1/2 )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;First column&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;grid__item sm-w-1/2 xs-mrgt&quot;&gt;
-		&lt;div class=&quot;box box--default box--tiny text-center&quot;&gt;Second column&lt;/div&gt;
+	&lt;div class=&quot;grid__item ( sm-w-1/2 xs-mrgt )&quot;&gt;
+		&lt;div class=&quot;( box box--default box--tiny text-center )&quot;&gt;Second column&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -1003,21 +1045,25 @@
 	</span>
 </div>
 
-		</div>
+			</div>
 
 </div>
 
 
 <div class="f-item-group" id="lists">
 
-	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Lists</h2>
 	</div>
-		<div class="f-item-group" id="lists.01.unstyled">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Unstyled</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Simply remove list default bullets or numbers.</p>
+
+			<div class="f-item-group" id="lists.01.unstyled">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Unstyled</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Simply remove list default bullets or numbers.</p>
 
 </div>
 <div class="f-item-preview">
@@ -1045,23 +1091,26 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="lists.inline">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Inline</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Put list items inline with or without gutters. You can reduce or increase the space by using the modifiers <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>. Remove gutters with <code>tight</code>, add separators with <code>divided</code>.</p>
+			</div>
+			<div class="f-item-group" id="lists.inline">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Inline</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Put list items inline with or without gutters. You can reduce or increase the space by using the modifiers <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>. Remove gutters with <code>tight</code>, add separators with <code>divided</code>.</p>
 <p>Since the list items are displayed as <code>inline-block</code>, you will probablby get an extra white space between them. Kanbasu was first removing those by setting the <code>font-size</code> to zero but this will prevent your code from being DRY in many cases. Therefor you should handle that on your side the way your prefer. <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">This article</a> covers the topic pretty well.</p>
 
 </div>
 <div class="f-item-preview">
-	<ul class="list-inline mrgb+">
+	<ul class="list-inline ( mrgb+ )">
 	<li>Lorem</li>
 	<li>Ipsum</li>
 	<li>Dolor</li>
 </ul>
 
-<ul class="list-inline list-inline--tight mrgb+">
+<ul class="list-inline list-inline--tight ( mrgb+ )">
 	<li>Lorem</li>
 	<li>Ipsum</li>
 	<li>Dolor</li>
@@ -1074,13 +1123,13 @@
 </ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ul class=&quot;list-inline mrgb+&quot;&gt;
+	<pre><code class="language-markup">&lt;ul class=&quot;list-inline ( mrgb+ )&quot;&gt;
 	&lt;li&gt;Lorem&lt;/li&gt;
 	&lt;li&gt;Ipsum&lt;/li&gt;
 	&lt;li&gt;Dolor&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ul class=&quot;list-inline list-inline--tight mrgb+&quot;&gt;
+&lt;ul class=&quot;list-inline list-inline--tight ( mrgb+ )&quot;&gt;
 	&lt;li&gt;Lorem&lt;/li&gt;
 	&lt;li&gt;Ipsum&lt;/li&gt;
 	&lt;li&gt;Dolor&lt;/li&gt;
@@ -1103,22 +1152,25 @@
 	</span>
 </div>
 
-		</div>
-		<div class="f-item-group" id="lists.stacked">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Stacked</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Stack list items with gutters. You can reduce or increase the space by using the modifiers <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>. Add separators with <code>divided</code>.</p>
+			</div>
+			<div class="f-item-group" id="lists.stacked">
+				<div class="f-item-heading-group" data-f-toggle="labels">
+	<h3 class="f-item-heading">Stacked</h3>
+</div>
+<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Stack list items with gutters. You can reduce or increase the space by using the modifiers <code>tiny</code>, <code>small</code>, <code>large</code> or <code>huge</code>. Add separators with <code>divided</code>.</p>
 
 </div>
 <div class="f-item-preview">
-	<ul class="list-stacked mrgb+">
+	<ul class="list-stacked ( mrgb+ )">
 	<li>Class aptent taciti sociosqu ad litora</li>
 	<li>Torquent per conubia nostra, per inceptos himenaeos</li>
 	<li>Sed molestie augue sit amet leo consequat posuere</li>
 </ul>
 
-<ul class="list-stacked list-stacked--tight mrgb+">
+<ul class="list-stacked list-stacked--tight ( mrgb+ )">
 	<li>Lorem</li>
 	<li>Ipsum</li>
 	<li>Dolor</li>
@@ -1131,13 +1183,13 @@
 </ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ul class=&quot;list-stacked mrgb+&quot;&gt;
+	<pre><code class="language-markup">&lt;ul class=&quot;list-stacked ( mrgb+ )&quot;&gt;
 	&lt;li&gt;Class aptent taciti sociosqu ad litora&lt;/li&gt;
 	&lt;li&gt;Torquent per conubia nostra, per inceptos himenaeos&lt;/li&gt;
 	&lt;li&gt;Sed molestie augue sit amet leo consequat posuere&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ul class=&quot;list-stacked list-stacked--tight mrgb+&quot;&gt;
+&lt;ul class=&quot;list-stacked list-stacked--tight ( mrgb+ )&quot;&gt;
 	&lt;li&gt;Lorem&lt;/li&gt;
 	&lt;li&gt;Ipsum&lt;/li&gt;
 	&lt;li&gt;Dolor&lt;/li&gt;
@@ -1160,7 +1212,7 @@
 	</span>
 </div>
 
-		</div>
+			</div>
 
 </div>
 
@@ -1169,23 +1221,28 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Media</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>The famous media object created by <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Nicole Sullivan</a>. Simply put content next to an image or anything else.</p>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>The famous media object created by <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Nicole Sullivan</a>. Simply put content next to an image or anything else.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="media mrgb">
+	<div class="media ( mrgb )">
 	<div class="media__left">
-		<img src="http://placehold.it/200x200" class="media__image">
+		<img src="https://placehold.it/200x200" class="media__image">
 	</div>
 	<div class="media__body">
 		<p>Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio
 			ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi.</p>
 	</div>
 </div>
+
 <div class="media">
 	<div class="media__right">
-		<img src="http://placehold.it/200x200" class="media__image">
+		<img src="https://placehold.it/200x200" class="media__image">
 	</div>
 	<div class="media__body">
 		<p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum
@@ -1194,18 +1251,19 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;media mrgb&quot;&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;media ( mrgb )&quot;&gt;
 	&lt;div class=&quot;media__left&quot;&gt;
-		&lt;img src=&quot;http://placehold.it/200x200&quot; class=&quot;media__image&quot;&gt;
+		&lt;img src=&quot;https://placehold.it/200x200&quot; class=&quot;media__image&quot;&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;media__body&quot;&gt;
 		&lt;p&gt;Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio
 			ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi.&lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
+
 &lt;div class=&quot;media&quot;&gt;
 	&lt;div class=&quot;media__right&quot;&gt;
-		&lt;img src=&quot;http://placehold.it/200x200&quot; class=&quot;media__image&quot;&gt;
+		&lt;img src=&quot;https://placehold.it/200x200&quot; class=&quot;media__image&quot;&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;media__body&quot;&gt;
 		&lt;p&gt;Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum
@@ -1232,14 +1290,18 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Media Responsive</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Extend the default media component but vertically align image and content under a specific breakpoint.</p>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Extend the default media component but vertically align image and content under a specific breakpoint.</p>
 
 </div>
 <div class="f-item-preview">
 	<div class="media media--responsive">
 	<div class="media__left">
-		<img src="http://placehold.it/200x200" class="media__image">
+		<img src="https://placehold.it/200x200" class="media__image">
 	</div>
 	<div class="media__body">
 		<p>Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio
@@ -1250,7 +1312,7 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;media media--responsive&quot;&gt;
 	&lt;div class=&quot;media__left&quot;&gt;
-		&lt;img src=&quot;http://placehold.it/200x200&quot; class=&quot;media__image&quot;&gt;
+		&lt;img src=&quot;https://placehold.it/200x200&quot; class=&quot;media__image&quot;&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;media__body&quot;&gt;
 		&lt;p&gt;Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio
@@ -1277,34 +1339,38 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Mosaic</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Use the power of tables to display content. The most interesting part of this component is to vertically align its content.</p>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Use the power of tables to display content. The most interesting part of this component is to vertically align its content.</p>
 <p>You can share space between cells evenly with the modifier <code>mosaic--fixed</code>. Make a cell fit its content with <code>mosaic__cell--fit</code>.</p>
 
 </div>
 <div class="f-item-preview">
 	<div class="mosaic">
 	<div class="mosaic__cell">
-		<img src="http://placehold.it/200x150">
+		<img src="https://placehold.it/200x150">
 	</div>
-	<div class="mosaic__cell pdgl">
+	<div class="mosaic__cell">
 		<p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et
 			justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.</p>
 	</div>
-	<div class="mosaic__cell mosaic__cell--fit pdgl">
+	<div class="mosaic__cell mosaic__cell--fit">
 		<button>Press me</button>
 	</div>
 </div>
 
 <div class="mosaic mosaic--fixed">
 	<div class="mosaic__cell text-center">
-		<img src="http://placehold.it/200x150">
+		<img src="https://placehold.it/200x150">
 	</div>
-	<div class="mosaic__cell pdgl">
+	<div class="mosaic__cell">
 		<p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et
 			justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.</p>
 	</div>
-	<div class="mosaic__cell text-center pdgr">
+	<div class="mosaic__cell text-center">
 		<button>Press me</button>
 	</div>
 </div>
@@ -1312,26 +1378,26 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;mosaic&quot;&gt;
 	&lt;div class=&quot;mosaic__cell&quot;&gt;
-		&lt;img src=&quot;http://placehold.it/200x150&quot;&gt;
+		&lt;img src=&quot;https://placehold.it/200x150&quot;&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;mosaic__cell pdgl&quot;&gt;
+	&lt;div class=&quot;mosaic__cell&quot;&gt;
 		&lt;p&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et
 			justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.&lt;/p&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;mosaic__cell mosaic__cell--fit pdgl&quot;&gt;
+	&lt;div class=&quot;mosaic__cell mosaic__cell--fit&quot;&gt;
 		&lt;button&gt;Press me&lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;mosaic mosaic--fixed&quot;&gt;
 	&lt;div class=&quot;mosaic__cell text-center&quot;&gt;
-		&lt;img src=&quot;http://placehold.it/200x150&quot;&gt;
+		&lt;img src=&quot;https://placehold.it/200x150&quot;&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;mosaic__cell pdgl&quot;&gt;
+	&lt;div class=&quot;mosaic__cell&quot;&gt;
 		&lt;p&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et
 			justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.&lt;/p&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;mosaic__cell text-center pdgr&quot;&gt;
+	&lt;div class=&quot;mosaic__cell text-center&quot;&gt;
 		&lt;button&gt;Press me&lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1355,20 +1421,26 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Mosaic Responsive</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Stack mosaic items under a specific breakpoint. Use the spacings helper to adjust padding/margin between items.</p>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+		<div class="text-muted"><p>Since 1.1.0</p>
+</div>
+
+
+		<p>Stack mosaic items under a specific breakpoint. Use the spacings helper to adjust padding/margin between items.</p>
 
 </div>
 <div class="f-item-preview">
 	<div class="mosaic mosaic--responsive">
 	<div class="mosaic__cell">
-		<img src="http://placehold.it/200x150">
+		<img src="https://placehold.it/200x150">
 	</div>
-	<div class="mosaic__cell pdgl sm-pdgl0 xs-pdgl0">
+	<div class="mosaic__cell">
 		<p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et
 			justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.</p>
 	</div>
-	<div class="mosaic__cell mosaic__cell--fit pdgl sm-pdgl0 xs-pdgl0">
+	<div class="mosaic__cell mosaic__cell--fit">
 		<button>Press me</button>
 	</div>
 </div>
@@ -1376,13 +1448,13 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;mosaic mosaic--responsive&quot;&gt;
 	&lt;div class=&quot;mosaic__cell&quot;&gt;
-		&lt;img src=&quot;http://placehold.it/200x150&quot;&gt;
+		&lt;img src=&quot;https://placehold.it/200x150&quot;&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;mosaic__cell pdgl sm-pdgl0 xs-pdgl0&quot;&gt;
+	&lt;div class=&quot;mosaic__cell&quot;&gt;
 		&lt;p&gt;Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et
 			justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.&lt;/p&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;mosaic__cell mosaic__cell--fit pdgl sm-pdgl0 xs-pdgl0&quot;&gt;
+	&lt;div class=&quot;mosaic__cell mosaic__cell--fit&quot;&gt;
 		&lt;button&gt;Press me&lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>

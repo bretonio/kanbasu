@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Helpers · Kanbasu</title>
+	<title>Helpers &middot; Kanbasu</title>
 
 	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
@@ -57,9 +57,14 @@
 			</div>
 		
 			<ul>
-		
 				<li>
 					<a href="/index.html" class="f-menu__heading">Overview</a>
+		
+					<ul>
+							<li>
+								<a href="/settings.html">Settings</a>
+							</li>
+					</ul>
 				</li>
 		
 				<li>
@@ -86,22 +91,22 @@
 					<a href="/02-helpers.html" class="f-menu__heading">Helpers</a>
 					<ul>
 						<li>
+							<a href="/02-helpers.html#display">Display</a>
+						</li>
+						<li>
 							<a href="/02-helpers.html#float">Float</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#positionning">Positionning</a>
+							<a href="/02-helpers.html#images">Images</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#responsive">Responsive</a>
+							<a href="/02-helpers.html#positioning">Positioning</a>
 						</li>
 						<li>
 							<a href="/02-helpers.html#spacings">Spacings</a>
 						</li>
 						<li>
-							<a href="/02-helpers.html#text">Text</a>
-						</li>
-						<li>
-							<a href="/02-helpers.html#visibility">Visibility</a>
+							<a href="/02-helpers.html#typography">Typography</a>
 						</li>
 					</ul>
 				</li>
@@ -147,24 +152,17 @@
 				</li>
 		
 				<li>
-					<a href="/pages.html" class="f-menu__heading">Pages</a>
+					<a href="/more.html" class="f-menu__heading">More</a>
 					<ul>
 						<li>
-							<a href="/pages/example-layout.html">Example Layout</a>
+							<a href="/more/example-layout.html">Example Layout</a>
+						</li>
+						<li>
+							<a href="/more/faq.html">Faq</a>
 						</li>
 					</ul>
 				</li>
-		
-				<!--
-				<li>
-					<a href="/docs.html" class="f-menu__heading">Docs</a>
-					<ul>
-					</ul>
-				</li>
-				-->
-		
 			</ul>
-		
 		
 		</div>
 		<!-- /fabricator menu -->
@@ -175,22 +173,21 @@
 									<option value="/01-defaults.html#forms.01.input">Forms &middot; Input</option>
 									<option value="/01-defaults.html#forms.02.select">Forms &middot; Select</option>
 									<option value="/01-defaults.html#forms.03.textarea">Forms &middot; Textarea</option>
-									<option value="/01-defaults.html#forms.04.checkbox-&amp;-radio">Forms &middot; Checkbox &amp; Radio</option>
-									<option value="/01-defaults.html#forms.05.checkbox-&amp;-radio-inline">Forms &middot; Checkbox &amp; Radio Inline</option>
-									<option value="/01-defaults.html#forms.06.input-&amp;-select-size">Forms &middot; Input &amp; Select Size</option>
+									<option value="/01-defaults.html#forms.04.checkbox-and-radio">Forms &middot; Checkbox And Radio</option>
+									<option value="/01-defaults.html#forms.05.checkbox-and-radio-inline">Forms &middot; Checkbox And Radio Inline</option>
+									<option value="/01-defaults.html#forms.06.input-and-select-size">Forms &middot; Input And Select Size</option>
 								<option value="/01-defaults.html#headings">Headings</option>
 									<option value="/01-defaults.html#lists.descriptions">Lists &middot; Descriptions</option>
 									<option value="/01-defaults.html#lists.ordered">Lists &middot; Ordered</option>
 									<option value="/01-defaults.html#lists.unordered">Lists &middot; Unordered</option>
 								<option value="/01-defaults.html#paragraph">Paragraph</option>
 								<option value="/01-defaults.html#table">Table</option>
+								<option value="/02-helpers.html#display">Display</option>
 								<option value="/02-helpers.html#float">Float</option>
-								<option value="/02-helpers.html#positionning">Positionning</option>
-									<option value="/02-helpers.html#responsive.display">Responsive &middot; Display</option>
-									<option value="/02-helpers.html#responsive.images">Responsive &middot; Images</option>
+								<option value="/02-helpers.html#images">Images</option>
+								<option value="/02-helpers.html#positioning">Positioning</option>
 								<option value="/02-helpers.html#spacings">Spacings</option>
-								<option value="/02-helpers.html#text">Text</option>
-								<option value="/02-helpers.html#visibility">Visibility</option>
+								<option value="/02-helpers.html#typography">Typography</option>
 								<option value="/03-components.html#box">Box</option>
 									<option value="/03-components.html#buttons.base">Buttons &middot; Base</option>
 									<option value="/03-components.html#buttons.sizes">Buttons &middot; Sizes</option>
@@ -227,11 +224,159 @@
 <h1 data-f-toggle="labels">Helpers</h1>
 
 
+<div class="f-item-group" id="display">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Display</h2>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+		<div class="text-muted"><p>Since 1.3.0</p>
+</div>
+
+
+		<p>Show or hide content depending on the media type.</p>
+<table>
+  <tbody>
+    <tr>
+    </tr>
+      <td class="w-1/3"><code>.hidden</code></td>
+      <td class="w-2/3">Completely hidden, in any case.</td>
+    <tr>
+      <td><code>.hidden-print</code></td>
+      <td>Hidden when printed.</td>
+    </tr>
+    <tr>
+      <td><code>.invisible</code></td>
+      <td>Invisible but takes place in the flow.</td>
+    </tr>
+    <tr>
+      <td><code>.invisible-print</code></td>
+      <td>Invisible when printed.</td>
+    </tr>
+    <tr>
+      <td><code>.visible-print</code></td>
+      <td>Visible only when printed.</td>
+    </tr>
+    <tr>
+      <td><code>.visible-sr</code></td>
+      <td>Visible only to screen readers.</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+    <caption>The following classes depends on the breakpoints defined in the settings, here are the defaults.</caption>
+  <thead>
+    <tr>
+      <th class="w-2/6">Class</th>
+      <th class="w-1/6">Extra-small</th>
+      <th class="w-1/6">Small</th>
+      <th class="w-1/6">Medium</th>
+      <th class="w-1/6">Large</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.hidden-sm-up</code></td>
+      <td>Visible</td>
+      <td class="text-muted">Hidden</td>
+      <td class="text-muted">Hidden</td>
+      <td class="text-muted">Hidden</td>
+    </tr>
+    <tr>
+      <td><code>.hidden-md-up</code></td>
+      <td>Visible</td>
+      <td>Visible</td>
+      <td class="text-muted">Hidden</td>
+      <td class="text-muted">Hidden</td>
+    </tr>
+    <tr>
+      <td><code>.hidden-lg-up</code></td>
+      <td>Visible</td>
+      <td>Visible</td>
+      <td>Visible</td>
+      <td class="text-muted">Hidden</td>
+    </tr>
+    <tr>
+      <td><code>.hidden-xs-down</code></td>
+      <td class="text-muted">Hidden</td>
+      <td>Visible</td>
+      <td>Visible</td>
+      <td>Visible</td>
+    </tr>
+    <tr>
+      <td><code>.hidden-sm-down</code></td>
+      <td class="text-muted">Hidden</td>
+      <td class="text-muted">Hidden</td>
+      <td>Visible</td>
+      <td>Visible</td>
+    </tr>
+    <tr>
+      <td><code>.hidden-md-down</code></td>
+      <td class="text-muted">Hidden</td>
+      <td class="text-muted">Hidden</td>
+      <td class="text-muted">Hidden</td>
+      <td>Visible</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<div class="f-item-preview">
+	<div class="hidden">Hidden</div>
+<div class="hidden-print">Hidden when printed</div>
+<div class="invisible">Invisible</div>
+<div class="invisible-print">Invisible when printed</div>
+<div class="visible-print">Visible only when printed</div>
+<div class="visible-sr">Visible only to screen readers</div>
+<div class="hidden-sm-up">Hidden on small screens and above</div>
+<div class="hidden-md-up">Hidden on medium screens and above</div>
+<div class="hidden-lg-up">Hidden on large screens and above</div>
+<div class="hidden-xs-down">Hidden on extra-small screens</div>
+<div class="hidden-sm-down">Hidden on small screens and under</div>
+<div class="hidden-md-down">Hidden on medium screens and under</div>
+<div class="hidden-print">Hidden when printed</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;hidden&quot;&gt;Hidden&lt;/div&gt;
+&lt;div class=&quot;hidden-print&quot;&gt;Hidden when printed&lt;/div&gt;
+&lt;div class=&quot;invisible&quot;&gt;Invisible&lt;/div&gt;
+&lt;div class=&quot;invisible-print&quot;&gt;Invisible when printed&lt;/div&gt;
+&lt;div class=&quot;visible-print&quot;&gt;Visible only when printed&lt;/div&gt;
+&lt;div class=&quot;visible-sr&quot;&gt;Visible only to screen readers&lt;/div&gt;
+&lt;div class=&quot;hidden-sm-up&quot;&gt;Hidden on small screens and above&lt;/div&gt;
+&lt;div class=&quot;hidden-md-up&quot;&gt;Hidden on medium screens and above&lt;/div&gt;
+&lt;div class=&quot;hidden-lg-up&quot;&gt;Hidden on large screens and above&lt;/div&gt;
+&lt;div class=&quot;hidden-xs-down&quot;&gt;Hidden on extra-small screens&lt;/div&gt;
+&lt;div class=&quot;hidden-sm-down&quot;&gt;Hidden on small screens and under&lt;/div&gt;
+&lt;div class=&quot;hidden-md-down&quot;&gt;Hidden on medium screens and under&lt;/div&gt;
+&lt;div class=&quot;hidden-print&quot;&gt;Hidden when printed&lt;/div&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="float">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Float</h2>
 	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+</div>
 <div class="f-item-preview">
 	<div class="clearfix">
 	<div class="pull-left">Element floating on the left</div>
@@ -259,29 +404,78 @@
 </div>
 
 
-<div class="f-item-group" id="positionning">
+<div class="f-item-group" id="images">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Positionning</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Use transforms to position a container within the closest relative parent.</p>
+		<h2 class="f-item-heading">Images</h2>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Prevents an image from overflowing its container with <code>img-responsive</code> or make it fit its container with <code>img-block</code>.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="box box--default mrgb relative-parent" style="height: 200px">
+	<p><img src="https://placehold.it/800x200" class="img-responsive"></p>
+
+<p><img src="https://placehold.it/800x200" class="img-block"></p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p&gt;&lt;img src=&quot;https://placehold.it/800x200&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://placehold.it/800x200&quot; class=&quot;img-block&quot;&gt;&lt;/p&gt;</code></pre>
+</div>
+<div class="f-item-controls">
+	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
+		<span class="f-icon">
+			<svg>
+				<use xlink:href="#f-icon-code" />
+			</svg>
+		</span>
+		Toggle code
+	</span>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="positioning">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Positioning</h2>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Use transforms to position a container within the closest relative parent.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="( mrgb )">
+	<img src="https://placehold.it/200x100" class="h-align">
+</div>
+
+<div class="relative-parent ( box box--default mrgb )" style="height: 200px">
 	<div class="v-align">Vertically aligned</div>
 </div>
 
-<div class="box box--default relative-parent" style="height: 200px">
+<div class="relative-parent ( box box--default )" style="height: 200px">
 	<div class="vh-align">Vertically &amp; horizontally aligned</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;box box--default mrgb relative-parent&quot; style=&quot;height: 200px&quot;&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;( mrgb )&quot;&gt;
+	&lt;img src=&quot;https://placehold.it/200x100&quot; class=&quot;h-align&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;relative-parent ( box box--default mrgb )&quot; style=&quot;height: 200px&quot;&gt;
 	&lt;div class=&quot;v-align&quot;&gt;Vertically aligned&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;box box--default relative-parent&quot; style=&quot;height: 200px&quot;&gt;
+&lt;div class=&quot;relative-parent ( box box--default )&quot; style=&quot;height: 200px&quot;&gt;
 	&lt;div class=&quot;vh-align&quot;&gt;Vertically &amp;amp; horizontally aligned&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -300,208 +494,19 @@
 </div>
 
 
-<div class="f-item-group" id="responsive">
-
-	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Responsive</h2>
-	</div>
-		<div class="f-item-group" id="responsive.display">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Display</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Show or hide content depending on the current breakpoint.</p>
-<p><sup>1</sup> You can append <code>block</code>, <code>inline-block</code> or <code>inline</code> depending on the display you want.</p>
-
-</div>
-<div class="f-item-preview">
-	<table>
-	<tbody>
-		<tr>
-			<th width="28%">Class</th>
-			<th width="18%">Extra-small</th>
-			<th width="18%">Small</th>
-			<th width="18%">Medium</th>
-			<th width="18%">Large</th>
-		</tr>
-		<tr>
-			<td><code>.visible-xs-<sup>1</sup></code></td>
-			<td class="bg-success">Visible</td>
-			<td class="text-muted">Hidden</td>
-			<td class="text-muted">Hidden</td>
-			<td class="text-muted">Hidden</td>
-		</tr>
-		<tr>
-			<td><code>.visible-sm-<sup>1</sup></code></td>
-			<td class="text-muted">Hidden</td>
-			<td class="bg-success">Visible</td>
-			<td class="text-muted">Hidden</td>
-			<td class="text-muted">Hidden</td>
-		</tr>
-		<tr>
-			<td><code>.visible-md-<sup>1</sup></code></td>
-			<td class="text-muted">Hidden</td>
-			<td class="text-muted">Hidden</td>
-			<td class="bg-success">Visible</td>
-			<td class="text-muted">Hidden</td>
-		</tr>
-		<tr>
-			<td><code>.visible-lg-<sup>1</sup></code></td>
-			<td class="text-muted">Hidden</td>
-			<td class="text-muted">Hidden</td>
-			<td class="text-muted">Hidden</td>
-			<td class="bg-success">Visible</td>
-		</tr>
-		<tr>
-			<td><code>.hidden-xs</code></td>
-			<td class="text-muted">Hidden</td>
-			<td class="bg-success">Visible</td>
-			<td class="bg-success">Visible</td>
-			<td class="bg-success">Visible</td>
-		</tr>
-		<tr>
-			<td><code>.hidden-sm</code></td>
-			<td class="bg-success">Visible</td>
-			<td class="text-muted">Hidden</td>
-			<td class="bg-success">Visible</td>
-			<td class="bg-success">Visible</td>
-		</tr>
-		<tr>
-			<td><code>.hidden-md</code></td>
-			<td class="bg-success">Visible</td>
-			<td class="bg-success">Visible</td>
-			<td class="text-muted">Hidden</td>
-			<td class="bg-success">Visible</td>
-		</tr>
-		<tr>
-			<td><code>.hidden-lg</code></td>
-			<td class="bg-success">Visible</td>
-			<td class="bg-success">Visible</td>
-			<td class="bg-success">Visible</td>
-			<td class="text-muted">Hidden</td>
-		</tr>
-	</tbody>
-</table>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;table&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;th width=&quot;28%&quot;&gt;Class&lt;/th&gt;
-			&lt;th width=&quot;18%&quot;&gt;Extra-small&lt;/th&gt;
-			&lt;th width=&quot;18%&quot;&gt;Small&lt;/th&gt;
-			&lt;th width=&quot;18%&quot;&gt;Medium&lt;/th&gt;
-			&lt;th width=&quot;18%&quot;&gt;Large&lt;/th&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.visible-xs-&lt;sup&gt;1&lt;/sup&gt;&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.visible-sm-&lt;sup&gt;1&lt;/sup&gt;&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.visible-md-&lt;sup&gt;1&lt;/sup&gt;&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.visible-lg-&lt;sup&gt;1&lt;/sup&gt;&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.hidden-xs&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.hidden-sm&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.hidden-md&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;&lt;code&gt;.hidden-lg&lt;/code&gt;&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;bg-success&quot;&gt;Visible&lt;/td&gt;
-			&lt;td class=&quot;text-muted&quot;&gt;Hidden&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-</div>
-<div class="f-item-controls">
-	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
-		<span class="f-icon">
-			<svg>
-				<use xlink:href="#f-icon-code" />
-			</svg>
-		</span>
-		Toggle code
-	</span>
-</div>
-
-		</div>
-		<div class="f-item-group" id="responsive.images">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Images</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Prevents an image of overflowing its container with <code>img-responsive</code> or make it fit its container with <code>img-block</code>.</p>
-
-</div>
-<div class="f-item-preview">
-	<p><img src="http://placehold.it/800x200" class="img-responsive"></p>
-
-<p><img src="http://placehold.it/800x200" class="img-block"></p>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;&lt;img src=&quot;http://placehold.it/800x200&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://placehold.it/800x200&quot; class=&quot;img-block&quot;&gt;&lt;/p&gt;</code></pre>
-</div>
-<div class="f-item-controls">
-	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
-		<span class="f-icon">
-			<svg>
-				<use xlink:href="#f-icon-code" />
-			</svg>
-		</span>
-		Toggle code
-	</span>
-</div>
-
-		</div>
-
-</div>
-
-
 <div class="f-item-group" id="spacings">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Spacings</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Alter spacings (padding or margin) on elements according to the spacing units defined in the settings.</p>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+		<div class="warning"><p><strong>Since 1.3.0</strong>
+This component follow the mobile-first approach, using minimum width breakpoints by default. For example a class named <code>sm-mrgt</code> target small screens as before but also all upper sizes; medium, large and beyond.</p>
+</div>
+
+		<p>Alter spacings (padding or margin) on elements according to the spacing units defined in the settings.</p>
 <div class="grid">
     <div class="grid__item sm-w-1/3">
         <dl class="dl--inline text-small">
@@ -546,43 +551,43 @@
         </dl>
     </div>
 </div>
-<p>You can also restrict style to specific breakpoints by prefixing them with the media query name, for example <code>.xs-pdg+</code>.</p>
+<p>You can also restrict style to specific breakpoints by prefixing them with the media query name, for example <code>.lg-pdg+</code> to match only <em>large</em> screens. Those breakpoints are mobile-first and therefor apply to the targeted breakpoint and above.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="box box--tight box--default pdg">
+	<div class="pdg ( box box--tight box--default )">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus natus. Distinctio, nam.
 </div>
-<div class="box box--tight box--default mrg-">
+<div class="mrg- ( box box--tight box--default )">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus natus. Distinctio, nam.
 </div>
-<div class="box box--tight box--default pdgv- pdgh+ mrgt+ mrgb-">
+<div class="pdgv- pdgh+ mrgt+ mrgb- ( box box--tight box--default )">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus natus. Distinctio, nam.
 </div>
-<div class="box box--tight box--default pdg xs-pdg- mrgh">
+<div class="pdg md-pdg- mrgh ( box box--tight box--default )">
 	<strong>Responsive</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus
 	natus. Distinctio, nam.
 </div>
-<div class="box box--tight box--default mrgv lg-mrgv-">
+<div class="mrgv lg-mrgv- ( box box--tight box--default )">
 	<strong>Responsive</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus
 	natus. Distinctio, nam.
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;box box--tight box--default pdg&quot;&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;pdg ( box box--tight box--default )&quot;&gt;
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus natus. Distinctio, nam.
 &lt;/div&gt;
-&lt;div class=&quot;box box--tight box--default mrg-&quot;&gt;
+&lt;div class=&quot;mrg- ( box box--tight box--default )&quot;&gt;
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus natus. Distinctio, nam.
 &lt;/div&gt;
-&lt;div class=&quot;box box--tight box--default pdgv- pdgh+ mrgt+ mrgb-&quot;&gt;
+&lt;div class=&quot;pdgv- pdgh+ mrgt+ mrgb- ( box box--tight box--default )&quot;&gt;
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus natus. Distinctio, nam.
 &lt;/div&gt;
-&lt;div class=&quot;box box--tight box--default pdg xs-pdg- mrgh&quot;&gt;
+&lt;div class=&quot;pdg md-pdg- mrgh ( box box--tight box--default )&quot;&gt;
 	&lt;strong&gt;Responsive&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus
 	natus. Distinctio, nam.
 &lt;/div&gt;
-&lt;div class=&quot;box box--tight box--default mrgv lg-mrgv-&quot;&gt;
+&lt;div class=&quot;mrgv lg-mrgv- ( box box--tight box--default )&quot;&gt;
 	&lt;strong&gt;Responsive&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fuga delectus debitis asperiores distinctio saepe itaque aut, temporibus veritatis rerum odit exercitationem facilis, impedit amet, molestiae necessitatibus
 	natus. Distinctio, nam.
 &lt;/div&gt;</code></pre>
@@ -602,12 +607,16 @@
 </div>
 
 
-<div class="f-item-group" id="text">
+<div class="f-item-group" id="typography">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Text</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Use these only when dedicated tags, such as <code>em</code> or <code>strong</code>, are not applicable.</p>
+		<h2 class="f-item-heading">Typography</h2>
+	</div>
+
+		<div class="f-item-notes" data-f-toggle="notes">
+
+
+		<p>Use these only when dedicated tags, such as <code>em</code> or <code>strong</code>, are not applicable.</p>
 
 </div>
 <div class="f-item-preview">
@@ -641,39 +650,6 @@
 &lt;p class=&quot;text-large&quot;&gt;Large text&lt;/p&gt;
 
 &lt;p class=&quot;text-muted&quot;&gt;Text muted&lt;/p&gt;</code></pre>
-</div>
-<div class="f-item-controls">
-	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
-		<span class="f-icon">
-			<svg>
-				<use xlink:href="#f-icon-code" />
-			</svg>
-		</span>
-		Toggle code
-	</span>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="visibility">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Visibility</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Hide content to the end user: completely hidden, invisible or hidden for everyone but screen readers.</p>
-
-</div>
-<div class="f-item-preview">
-	<p class="is-hidden">I’m a paragraph hidden with `display: none`.</p>
-<p class="is-invisible">I’m a ghost paragraph thanks to `visibility: hidden`.</p>
-<p class="sr-only">I’m a paragraph only accessible to screen readers.</p>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p class=&quot;is-hidden&quot;&gt;I’m a paragraph hidden with &#x60;display: none&#x60;.&lt;/p&gt;
-&lt;p class=&quot;is-invisible&quot;&gt;I’m a ghost paragraph thanks to &#x60;visibility: hidden&#x60;.&lt;/p&gt;
-&lt;p class=&quot;sr-only&quot;&gt;I’m a paragraph only accessible to screen readers.&lt;/p&gt;</code></pre>
 </div>
 <div class="f-item-controls">
 	<span class="f-control" data-f-toggle-control="code" title="Toggle Code">
